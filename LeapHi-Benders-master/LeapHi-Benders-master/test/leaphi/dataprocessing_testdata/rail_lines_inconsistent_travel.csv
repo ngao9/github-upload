@@ -1,0 +1,13 @@
+NAME,NB_PER_HOUR,MEGA_STOPS,,,,
+GOLD,3,1001,1002,1003,1005,1006
+schedule_left_right,-1,0,5,8.7,12,14.1
+schedule_right_left,-2,13.1,8.1,5.4,2,0
+RED,4,1006,1005,1004,1002,1001
+schedule_left_right,-1,0,2,2.8,8.1,13.1
+schedule_right_left,-2,14.1,12.1,11.3,5,0
+GREEN,5,1009,1003,1004,1008,
+schedule_left_right,-1,0,2.6,11.6,14.6,
+schedule_right_left,-2,14.6,12,3,0,
+BLUE,6,1001,1002,1004,1005,1007
+schedule_left_right,-1,0,5,11.3,12.1,16.1
+schedule_right_left,-2,15.1,10.1,4.8,4,0

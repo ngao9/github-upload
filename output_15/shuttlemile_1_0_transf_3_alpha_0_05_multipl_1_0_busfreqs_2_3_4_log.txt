@@ -1,0 +1,74 @@
+
+===============
+TRIP STATISTICS
+===============
+Total number of trips: 4773
+Total number of people: 5694
+
+=========
+CPLEX LOG
+=========
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Preprocessing_Linear                    0
+CPXPARAM_TimeLimit                               3600
+CPXPARAM_MIP_Tolerances_MIPGap                   0.01
+Warning: Control callbacks may disable some MIP features.
+Lazy constraint(s) or lazy constraint/branch callback is present.
+    Disabling dual reductions (CPX_PARAM_REDUCE) in presolve.
+    Disabling presolve reductions that prevent crushing forms.
+         Disabling repeat represolve because of lazy constraint/incumbent callback.
+Tried aggregator 1 time.
+MIP Presolve eliminated 2 rows and 0 columns.
+MIP Presolve modified 6 coefficients.
+Reduced MIP has 66 rows, 97 columns, and 420 nonzeros.
+Reduced MIP has 96 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.22 ticks)
+Probing time = 0.00 sec. (0.06 ticks)
+Clique table members: 60.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.06 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+      0     0     1277.4312     2                      0.0000        0         
+*     0+    0                        30146.9355     1277.4312            95.76%
+      0     0    28975.2978     2    30146.9355       Cuts: 3       10    3.89%
+      0     0    29227.5069     2    30146.9355       Cuts: 2       19    3.05%
+      0     0    29260.3843     2    30146.9355       User: 1       27    2.94%
+      0     0    29267.7468     2    30146.9355       User: 1       35    2.92%
+*     0+    0                        29501.2326    29267.7468             0.79%
+
+User cuts applied:  9
+
+Root node processing (before b&c):
+  Real time             =    1.34 sec. (3.59 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    1.34 sec. (3.59 ticks)
+z_42 = 1.000000: from 908629 (index = 1575) to 212171 (index = 645), mode = 1, nbVehicles = 8
+z_51 = 1.000000: from 212156 (index = 640) to 908629 (index = 1575), mode = 1, nbVehicles = 8
+z_84 = 1.000000: from 212171 (index = 645) to 212156 (index = 640), mode = 1, nbVehicles = 8
+
+============
+TIME SUMMARY
+============
+0.000000s: start reading parameters
+1.670000s: complete reading parameters
+1.670000s: start building instance
+2.040000s: complete building instance
+2.040000s: start building network design problem
+4.720000s: complete building network design problem
+4.720000s: start solving network design problem
+6.140000s: solver completed with status = 2
+
+========
+SOLUTION
+========
+6.140000s: start calculating network scores
+6.170000s: complete calculating network scores
+6.170000s: start retrieving optimal passenger paths
+6.180000s: complete retrieving optimal passenger paths

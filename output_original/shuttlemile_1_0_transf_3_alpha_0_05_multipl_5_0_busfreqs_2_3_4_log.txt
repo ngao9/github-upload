@@ -1,0 +1,202 @@
+
+===============
+TRIP STATISTICS
+===============
+Total number of trips: 4773
+Total number of people: 5694
+
+=========
+CPLEX LOG
+=========
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Preprocessing_Linear                    0
+CPXPARAM_TimeLimit                               3600
+CPXPARAM_MIP_Tolerances_MIPGap                   0.0050000000000000001
+Lazy constraint(s) or lazy constraint/branch callback is present.
+    Disabling dual reductions (CPX_PARAM_REDUCE) in presolve.
+    Disabling presolve reductions that prevent crushing forms.
+         Disabling repeat represolve because of lazy constraint/incumbent callback.
+Tried aggregator 1 time.
+MIP Presolve modified 37 coefficients.
+Reduced MIP has 547 rows, 1531 columns, and 4590 nonzeros.
+Reduced MIP has 1530 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.02 sec. (1.69 ticks)
+Probing time = 0.00 sec. (0.56 ticks)
+Clique table members: 510.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.02 sec. (0.76 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+      0     0      726.3866     2                      0.0000        0         
+*     0+    0                       150663.3913      726.3866            99.52%
+*     0+    0                       149509.2746      726.3866            99.51%
+      0     0     7953.2309     2   149509.2746       User: 1       70   94.68%
+*     0+    0                       134272.1012     7953.2309            94.08%
+      0     0    75377.9508     2   134272.1012       Cuts: 5      350   43.86%
+      0     0    78813.1044     2   134272.1012      Cuts: 31      447   41.30%
+      0     0   117071.7297     2   134272.1012      Cuts: 30      667   12.81%
+      0     0   117334.5287     2   134272.1012       User: 1      691   12.61%
+*     0+    0                       132116.5632   117334.5287            11.19%
+      0     0   118021.5836     2   132116.5632       User: 1      719   10.67%
+*     0+    0                       129262.6568   118021.5836             8.70%
+      0     0   118160.3186     2   129262.6568       Cuts: 5      733    8.59%
+*     0+    0                       129125.8215   118160.3186             8.49%
+      0     0   118823.2345     2   129125.8215       User: 1      779    7.98%
+      0     0   118952.8084     2   129125.8215      Cuts: 12      797    7.88%
+*     0+    0                       127710.1136   118952.8084             6.86%
+      0     0   119247.5525     2   127710.1136       Cuts: 5      840    6.63%
+      0     0   119709.0643     2   127710.1136       User: 1      903    6.27%
+      0     0   119756.7821     2   127710.1136      Cuts: 15      927    6.23%
+      0     0   119795.5988     2   127710.1136       User: 1      945    6.20%
+      0     0   119808.5054     2   127710.1136      Cuts: 18      953    6.19%
+      0     0   120008.0797     2   127710.1136       User: 1      992    6.03%
+      0     0   120096.2042     2   127710.1136      Cuts: 17     1028    5.96%
+      0     0   120257.3623     2   127710.1136      Cuts: 10     1071    5.84%
+      0     0   120365.4490     2   127710.1136      Cuts: 21     1124    5.75%
+      0     0   120476.5144     2   127710.1136      Cuts: 26     1164    5.66%
+*     0+    0                       126832.5421   120476.5144             5.01%
+*     0+    0                       126184.2372   120476.5144             4.52%
+      0     0  -1.00000e+75     0   126184.2372   120476.5144     1164    4.52%
+      0     0   120645.8970     2   126184.2372      Cuts: 13     1240    4.39%
+      0     0   120858.5928     2   126184.2372      Cuts: 13     1315    4.22%
+      0     0   120910.0855     2   126184.2372      Cuts: 10     1352    4.18%
+*     0+    0                       126184.2372   120910.0855             4.18%
+      0     0   120974.1673     2   126184.2372       Cuts: 7     1402    4.13%
+      0     0   121139.0035     2   126184.2372      Cuts: 20     1473    4.00%
+      0     0   121172.4697     2   126184.2372      Cuts: 28     1514    3.97%
+      0     0   121305.4915     2   126184.2372       Cuts: 8     1598    3.87%
+      0     0   121392.0684     2   126184.2372      Cuts: 16     1643    3.80%
+      0     0   121508.0423     2   126184.2372      Cuts: 19     1700    3.71%
+      0     0   121573.5971     2   126184.2372      Cuts: 22     1743    3.65%
+      0     0   121634.9521     2   126184.2372       Cuts: 6     1770    3.61%
+      0     0   121688.2974     2   126184.2372       Cuts: 4     1799    3.56%
+*     0+    0                       125870.2974   121688.2974             3.32%
+      0     0   121736.9779     2   125870.2974       Cuts: 8     1842    3.28%
+*     0+    0                       125870.2974   121736.9779             3.28%
+*     0+    0                       125042.6599   121736.9779             2.64%
+      0     0   121795.8533     2   125042.6599      Cuts: 23     1890    2.60%
+      0     0   121924.5764     2   125042.6599       Cuts: 6     1952    2.49%
+      0     0   121988.3162     2   125042.6599      Cuts: 31     2020    2.44%
+      0     0   122076.2623     2   125042.6599      Cuts: 17     2084    2.37%
+      0     0   122088.5366     2   125042.6599      Cuts: 20     2117    2.36%
+*     0+    0                       124087.7573   122088.5366             1.61%
+      0     0   122106.5423     2   124087.7573       User: 1     2146    1.60%
+      0     0   122124.9460     2   124087.7573       User: 1     2179    1.58%
+      0     0   122154.7875     2   124087.7573       User: 1     2219    1.56%
+      0     0   122162.5415     2   124087.7573       User: 1     2237    1.55%
+      0     0   122176.3809     2   124087.7573       User: 1     2289    1.54%
+      0     0   122190.9767     2   124087.7573       User: 1     2315    1.53%
+      0     0   122201.8377     2   124087.7573       User: 1     2347    1.52%
+      0     0   122209.0225     2   124087.7573       User: 1     2370    1.51%
+      0     0   122219.6901     2   124087.7573       User: 1     2397    1.51%
+      0     0   122225.2742     2   124087.7573       User: 1     2428    1.50%
+      0     0   122257.1710     2   124087.7573       User: 1     2504    1.48%
+      0     0   122273.9798     2   124087.7573       User: 1     2548    1.46%
+      0     0   122299.8904     2   124087.7573       User: 1     2589    1.44%
+      0     0   122310.1901     2   124087.7573       User: 1     2617    1.43%
+      0     0   122348.8799     2   124087.7573       User: 1     2660    1.40%
+      0     0   122362.3973     2   124087.7573       User: 1     2698    1.39%
+      0     0   122379.8267     2   124087.7573       User: 1     2749    1.38%
+      0     0   122413.0985     2   124087.7573       User: 1     2826    1.35%
+      0     0   122421.0771     2   124087.7573       User: 1     2867    1.34%
+      0     0   122428.9774     2   124087.7573       User: 1     2903    1.34%
+      0     0   122437.7932     2   124087.7573       User: 1     2931    1.33%
+      0     0   122445.2254     2   124087.7573       User: 1     2969    1.32%
+*     0+    0                       123583.1506   122445.2254             0.92%
+      0     0   122450.9757     2   123583.1506       User: 1     3013    0.92%
+*     0+    0                       123583.1506   122450.9757             0.92%
+      0     0   122457.8647     2   123583.1506       User: 1     3050    0.91%
+      0     0   122466.5860     2   123583.1506       User: 1     3108    0.90%
+      0     0   122470.4290     2   123583.1506       User: 1     3146    0.90%
+*     0+    0                       123567.3411   122470.4290             0.89%
+      0     0   122482.7905     2   123567.3411       User: 1     3197    0.88%
+      0     0   122510.0026     2   123567.3411       User: 1     3263    0.86%
+      0     0   122516.3199     2   123567.3411       User: 1     3306    0.85%
+      0     0   122529.5712     2   123567.3411       User: 1     3338    0.84%
+      0     0   122538.9771     2   123567.3411       User: 1     3380    0.83%
+      0     0   122548.9507     2   123567.3411       User: 1     3428    0.82%
+      0     0   122552.3124     2   123567.3411       User: 1     3458    0.82%
+      0     0   122559.6965     2   123567.3411       User: 1     3499    0.82%
+      0     0   122567.3244     2   123567.3411       User: 1     3561    0.81%
+      0     0   122571.3742     2   123567.3411       User: 1     3595    0.81%
+      0     0   122576.6067     2   123567.3411       User: 1     3630    0.80%
+      0     0   122584.1087     2   123567.3411       User: 1     3678    0.80%
+      0     0   122587.5392     2   123567.3411       User: 1     3709    0.79%
+      0     0   122597.6820     2   123567.3411       User: 1     3763    0.78%
+      0     0   122607.3033     2   123567.3411       User: 1     3811    0.78%
+      0     0   122611.1819     2   123567.3411       User: 1     3838    0.77%
+      0     0   122614.8619     2   123567.3411       User: 1     3885    0.77%
+      0     0   122618.7851     2   123567.3411       User: 1     3919    0.77%
+      0     0   122623.9539     2   123567.3411       User: 1     3947    0.76%
+      0     0   122634.0466     2   123567.3411       User: 1     4002    0.76%
+      0     0   122636.7923     2   123567.3411       User: 1     4029    0.75%
+      0     0   122639.5086     2   123567.3411       User: 1     4068    0.75%
+      0     0   122641.4442     2   123567.3411       User: 1     4099    0.75%
+      0     0   122646.2179     2   123567.3411       User: 1     4127    0.75%
+      0     0   122648.8810     2   123567.3411       User: 1     4166    0.74%
+      0     0   122654.1383     2   123567.3411       User: 1     4210    0.74%
+      0     0   122654.9615     2   123567.3411       User: 1     4240    0.74%
+      0     0   122657.7365     2   123567.3411       User: 1     4285    0.74%
+*     0+    0                       123256.3647   122657.7365             0.49%
+
+GUB cover cuts applied:  5
+Cover cuts applied:  6
+Flow cuts applied:  3
+Mixed integer rounding cuts applied:  10
+Zero-half cuts applied:  8
+User cuts applied:  128
+
+Root node processing (before b&c):
+  Real time             =  104.30 sec. (6122.65 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =  104.30 sec. (6122.65 ticks)
+z_57 = 1.000000: from 118052 (index = 129) to 907907 (index = 1557), mode = 1, nbVehicles = 8
+z_125 = 1.000000: from 120068 (index = 133) to 908629 (index = 1575), mode = 1, nbVehicles = 16
+z_182 = 1.000000: from 129012 (index = 197) to 908436 (index = 1565), mode = 1, nbVehicles = 16
+z_249 = 1.000000: from 134052 (index = 253) to 908634 (index = 1576), mode = 1, nbVehicles = 8
+z_372 = 1.000000: from 182014 (index = 410) to 907844 (index = 1554), mode = 1, nbVehicles = 8
+z_563 = 1.000000: from 211065 (index = 526) to 907844 (index = 1554), mode = 1, nbVehicles = 16
+z_627 = 1.000000: from 212171 (index = 645) to 908629 (index = 1575), mode = 1, nbVehicles = 8
+z_750 = 1.000000: from 212415 (index = 684) to 907844 (index = 1554), mode = 1, nbVehicles = 8
+z_873 = 1.000000: from 212711 (index = 757) to 908437 (index = 1566), mode = 1, nbVehicles = 8
+z_943 = 1.000000: from 902327 (index = 1158) to 908634 (index = 1576), mode = 1, nbVehicles = 12
+z_1066 = 1.000000: from 902723 (index = 1207) to 907845 (index = 1555), mode = 1, nbVehicles = 12
+z_1129 = 1.000000: from 903186 (index = 1267) to 907845 (index = 1555), mode = 1, nbVehicles = 12
+z_1233 = 1.000000: from 907844 (index = 1554) to 182014 (index = 410), mode = 1, nbVehicles = 8
+z_1241 = 1.000000: from 907844 (index = 1554) to 211065 (index = 526), mode = 1, nbVehicles = 16
+z_1248 = 1.000000: from 907844 (index = 1554) to 212415 (index = 684), mode = 1, nbVehicles = 8
+z_1270 = 1.000000: from 907845 (index = 1555) to 902723 (index = 1207), mode = 1, nbVehicles = 12
+z_1273 = 1.000000: from 907845 (index = 1555) to 903186 (index = 1267), mode = 1, nbVehicles = 12
+z_1293 = 1.000000: from 907907 (index = 1557) to 118052 (index = 129), mode = 1, nbVehicles = 8
+z_1331 = 1.000000: from 908436 (index = 1565) to 129012 (index = 197), mode = 1, nbVehicles = 16
+z_1341 = 1.000000: from 908437 (index = 1566) to 212711 (index = 757), mode = 1, nbVehicles = 8
+z_1457 = 1.000000: from 908629 (index = 1575) to 120068 (index = 133), mode = 1, nbVehicles = 16
+z_1458 = 1.000000: from 908629 (index = 1575) to 212171 (index = 645), mode = 1, nbVehicles = 8
+z_1491 = 1.000000: from 908634 (index = 1576) to 134052 (index = 253), mode = 1, nbVehicles = 8
+z_1498 = 1.000000: from 908634 (index = 1576) to 902327 (index = 1158), mode = 1, nbVehicles = 12
+
+============
+TIME SUMMARY
+============
+0.000000s: start reading parameters
+1.520000s: complete reading parameters
+1.520000s: start building instance
+1.860000s: complete building instance
+1.860000s: start building network design problem
+7.040000s: complete building network design problem
+7.040000s: start solving network design problem
+111.510000s: solver completed with status = 2
+
+========
+SOLUTION
+========
+111.510000s: start calculating network scores
+111.570000s: complete calculating network scores
+111.570000s: start retrieving optimal passenger paths
+111.580000s: complete retrieving optimal passenger paths

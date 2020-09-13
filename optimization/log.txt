@@ -1,0 +1,2544 @@
+The total number of shuttle stops is 1187.
+The total number of existing hubs is 57.
+The total number of potential hubs is 92.
+
+
+Gurobi Optimizer version 9.0.2 build v9.0.2rc0 (win64)
+Optimize a model with 110448 rows, 177012 columns and 395328 nonzeros
+Model fingerprint: 0x62fa92bb
+Variable types: 176863 continuous, 149 integer (149 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [6e-12, 4e+05]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 2911493.0087
+Presolve removed 108593 rows and 175510 columns
+Presolve time: 0.29s
+Presolved: 1855 rows, 1502 columns, 4320 nonzeros
+Found heuristic solution: objective 437228.67147
+Variable types: 1440 continuous, 62 integer (62 binary)
+
+Root relaxation: objective 4.115514e+05, 172 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0    411551.36343 411551.363  0.00%     -    0s
+
+Explored 0 nodes (172 simplex iterations) in 0.33 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 3: 411551 437229 2.91149e+06 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.115513634289e+05, best bound 4.115513634289e+05, gap 0.0000%
+
+
+the location numbers displayed are with respect to current hub location list.
+
+
+ Currently there is a hub at location 1.
+
+ Currently there is a hub at location 2.
+
+ Currently there is a hub at location 3.
+
+ Currently there is a hub at location 4.
+
+ Currently there is a hub at location 5.
+
+ Currently there is a hub at location 6.
+
+ Currently there is a hub at location 7.
+
+ Currently there is a hub at location 8.
+
+ Currently there is a hub at location 9.
+
+ Currently there is a hub at location 10.
+
+ Currently there is a hub at location 11.
+
+ Currently there is a hub at location 12.
+
+ Currently there is a hub at location 13.
+
+ Currently there is a hub at location 14.
+
+ Currently there is a hub at location 15.
+
+ Currently there is a hub at location 16.
+
+ Currently there is a hub at location 17.
+
+ Currently there is a hub at location 18.
+
+ Currently there is a hub at location 19.
+
+ Currently there is a hub at location 20.
+
+ Currently there is a hub at location 21.
+
+ Currently there is a hub at location 22.
+
+ Currently there is a hub at location 23.
+
+ Currently there is a hub at location 24.
+
+ Currently there is a hub at location 25.
+
+ Currently there is a hub at location 26.
+
+ Currently there is a hub at location 27.
+
+ Currently there is a hub at location 28.
+
+ Currently there is a hub at location 29.
+
+ Currently there is a hub at location 30.
+
+ Currently there is a hub at location 31.
+
+ Currently there is a hub at location 32.
+
+ Currently there is a hub at location 33.
+
+ Currently there is a hub at location 34.
+
+ Currently there is a hub at location 35.
+
+ Currently there is a hub at location 36.
+
+ Currently there is a hub at location 37.
+
+ Currently there is a hub at location 38.
+
+ Currently there is a hub at location 39.
+
+ Currently there is a hub at location 40.
+
+ Currently there is a hub at location 41.
+
+ Currently there is a hub at location 42.
+
+ Currently there is a hub at location 43.
+
+ Currently there is a hub at location 44.
+
+ Currently there is a hub at location 45.
+
+ Currently there is a hub at location 46.
+
+ Currently there is a hub at location 47.
+
+ Currently there is a hub at location 48.
+
+ Currently there is a hub at location 49.
+
+ Currently there is a hub at location 50.
+
+ Currently there is a hub at location 51.
+
+ Currently there is a hub at location 52.
+
+ Currently there is a hub at location 53.
+
+ Currently there is a hub at location 54.
+
+ Currently there is a hub at location 55.
+
+ Currently there is a hub at location 56.
+
+ Currently there is a hub at location 57.
+
+the location numbers displayed are with respect to potential hub location list.
+
+
+ Build a hub at location 31.
+
+ Build a hub at location 45.
+
+ Build a hub at location 62.
+
+ Build a hub at location 84.
+
+ Build a hub at location 85.
+
+ Build a hub at location 87.
+
+
+
+ Customer 2 goes to potential hub 62 100.0 % of its demand.
+
+ Customer 6 goes to potential hub 84 100.0 % of its demand.
+
+ Customer 8 goes to potential hub 84 100.0 % of its demand.
+
+ Customer 28 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 37 goes to potential hub 84 100.0 % of its demand.
+
+ Customer 40 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 46 goes to potential hub 87 100.0 % of its demand.
+
+ Customer 48 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 50 goes to potential hub 85 100.0 % of its demand.
+
+ Customer 51 goes to potential hub 62 100.0 % of its demand.
+
+ Customer 64 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 72 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 74 goes to potential hub 87 100.0 % of its demand.
+
+ Customer 78 goes to potential hub 84 100.0 % of its demand.
+
+ Customer 84 goes to potential hub 62 100.0 % of its demand.
+
+ Customer 85 goes to potential hub 87 100.0 % of its demand.
+
+ Customer 102 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 109 goes to potential hub 84 100.0 % of its demand.
+
+ Customer 114 goes to potential hub 62 100.0 % of its demand.
+
+ Customer 123 goes to potential hub 62 100.0 % of its demand.
+
+ Customer 139 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 145 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 150 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 151 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 159 goes to potential hub 62 100.0 % of its demand.
+
+ Customer 163 goes to potential hub 84 100.0 % of its demand.
+
+ Customer 164 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 186 goes to potential hub 85 100.0 % of its demand.
+
+ Customer 197 goes to potential hub 85 100.0 % of its demand.
+
+ Customer 200 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 201 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 202 goes to potential hub 85 100.0 % of its demand.
+
+ Customer 204 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 210 goes to potential hub 85 100.0 % of its demand.
+
+ Customer 211 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 223 goes to potential hub 62 100.0 % of its demand.
+
+ Customer 224 goes to potential hub 87 100.0 % of its demand.
+
+ Customer 227 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 230 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 231 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 237 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 255 goes to potential hub 84 100.0 % of its demand.
+
+ Customer 262 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 263 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 275 goes to potential hub 87 100.0 % of its demand.
+
+ Customer 286 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 299 goes to potential hub 87 100.0 % of its demand.
+
+ Customer 322 goes to potential hub 62 100.0 % of its demand.
+
+ Customer 324 goes to potential hub 87 100.0 % of its demand.
+
+ Customer 352 goes to potential hub 85 100.0 % of its demand.
+
+ Customer 360 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 366 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 368 goes to potential hub 87 100.0 % of its demand.
+
+ Customer 374 goes to potential hub 87 100.0 % of its demand.
+
+ Customer 395 goes to potential hub 85 100.0 % of its demand.
+
+ Customer 398 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 400 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 401 goes to potential hub 85 100.0 % of its demand.
+
+ Customer 405 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 406 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 407 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 422 goes to potential hub 87 100.0 % of its demand.
+
+ Customer 428 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 429 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 430 goes to potential hub 87 100.0 % of its demand.
+
+ Customer 434 goes to potential hub 84 100.0 % of its demand.
+
+ Customer 437 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 438 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 439 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 440 goes to potential hub 85 100.0 % of its demand.
+
+ Customer 442 goes to potential hub 85 100.0 % of its demand.
+
+ Customer 444 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 445 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 451 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 454 goes to potential hub 87 100.0 % of its demand.
+
+ Customer 456 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 458 goes to potential hub 62 100.0 % of its demand.
+
+ Customer 467 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 485 goes to potential hub 87 100.0 % of its demand.
+
+ Customer 491 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 523 goes to potential hub 87 100.0 % of its demand.
+
+ Customer 527 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 531 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 541 goes to potential hub 85 100.0 % of its demand.
+
+ Customer 546 goes to potential hub 87 100.0 % of its demand.
+
+ Customer 548 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 549 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 561 goes to potential hub 84 100.0 % of its demand.
+
+ Customer 564 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 569 goes to potential hub 84 100.0 % of its demand.
+
+ Customer 572 goes to potential hub 87 100.0 % of its demand.
+
+ Customer 584 goes to potential hub 85 100.0 % of its demand.
+
+ Customer 590 goes to potential hub 87 100.0 % of its demand.
+
+ Customer 595 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 597 goes to potential hub 62 100.0 % of its demand.
+
+ Customer 603 goes to potential hub 62 100.0 % of its demand.
+
+ Customer 615 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 621 goes to potential hub 85 100.0 % of its demand.
+
+ Customer 622 goes to potential hub 62 100.0 % of its demand.
+
+ Customer 639 goes to potential hub 62 100.0 % of its demand.
+
+ Customer 644 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 646 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 659 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 660 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 670 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 673 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 682 goes to potential hub 85 100.0 % of its demand.
+
+ Customer 688 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 689 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 702 goes to potential hub 85 100.0 % of its demand.
+
+ Customer 704 goes to potential hub 87 100.0 % of its demand.
+
+ Customer 708 goes to potential hub 62 100.0 % of its demand.
+
+ Customer 709 goes to potential hub 62 100.0 % of its demand.
+
+ Customer 710 goes to potential hub 87 100.0 % of its demand.
+
+ Customer 715 goes to potential hub 85 100.0 % of its demand.
+
+ Customer 717 goes to potential hub 84 100.0 % of its demand.
+
+ Customer 723 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 728 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 730 goes to potential hub 85 100.0 % of its demand.
+
+ Customer 733 goes to potential hub 84 100.0 % of its demand.
+
+ Customer 737 goes to potential hub 85 100.0 % of its demand.
+
+ Customer 761 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 764 goes to potential hub 87 100.0 % of its demand.
+
+ Customer 771 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 772 goes to potential hub 62 100.0 % of its demand.
+
+ Customer 789 goes to potential hub 87 100.0 % of its demand.
+
+ Customer 797 goes to potential hub 87 100.0 % of its demand.
+
+ Customer 798 goes to potential hub 87 100.0 % of its demand.
+
+ Customer 800 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 807 goes to potential hub 62 100.0 % of its demand.
+
+ Customer 810 goes to potential hub 85 100.0 % of its demand.
+
+ Customer 814 goes to potential hub 62 100.0 % of its demand.
+
+ Customer 818 goes to potential hub 85 100.0 % of its demand.
+
+ Customer 820 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 822 goes to potential hub 84 100.0 % of its demand.
+
+ Customer 826 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 834 goes to potential hub 62 100.0 % of its demand.
+
+ Customer 850 goes to potential hub 87 100.0 % of its demand.
+
+ Customer 852 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 858 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 866 goes to potential hub 87 100.0 % of its demand.
+
+ Customer 878 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 885 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 886 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 894 goes to potential hub 84 100.0 % of its demand.
+
+ Customer 906 goes to potential hub 84 100.0 % of its demand.
+
+ Customer 908 goes to potential hub 87 100.0 % of its demand.
+
+ Customer 932 goes to potential hub 62 100.0 % of its demand.
+
+ Customer 941 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 953 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 963 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 970 goes to potential hub 87 100.0 % of its demand.
+
+ Customer 982 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 992 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 998 goes to potential hub 85 100.0 % of its demand.
+
+ Customer 1000 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 1001 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 1011 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 1021 goes to potential hub 62 100.0 % of its demand.
+
+ Customer 1028 goes to potential hub 85 100.0 % of its demand.
+
+ Customer 1037 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 1045 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 1047 goes to potential hub 85 100.0 % of its demand.
+
+ Customer 1049 goes to potential hub 62 100.0 % of its demand.
+
+ Customer 1051 goes to potential hub 85 100.0 % of its demand.
+
+ Customer 1063 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 1070 goes to potential hub 87 100.0 % of its demand.
+
+ Customer 1072 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 1075 goes to potential hub 87 100.0 % of its demand.
+
+ Customer 1078 goes to potential hub 84 100.0 % of its demand.
+
+ Customer 1080 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 1081 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 1085 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 1090 goes to potential hub 85 100.0 % of its demand.
+
+ Customer 1092 goes to potential hub 62 100.0 % of its demand.
+
+ Customer 1115 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 1127 goes to potential hub 62 100.0 % of its demand.
+
+ Customer 1133 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 1137 goes to potential hub 84 100.0 % of its demand.
+
+ Customer 1139 goes to potential hub 85 100.0 % of its demand.
+
+ Customer 1140 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 1142 goes to potential hub 62 100.0 % of its demand.
+
+ Customer 1147 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 1149 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 1152 goes to potential hub 62 100.0 % of its demand.
+
+ Customer 1159 goes to potential hub 45 100.0 % of its demand.
+
+ Customer 1164 goes to potential hub 84 100.0 % of its demand.
+
+ Customer 1170 goes to potential hub 31 100.0 % of its demand.
+
+ Customer 1178 goes to potential hub 85 100.0 % of its demand.
+
+ Customer 1179 goes to potential hub 85 100.0 % of its demand.
+
+ Customer 1184 goes to potential hub 84 100.0 % of its demand.
+
+ Customer 1 goes to current hub 28 100.0 % of its demand.
+
+ Customer 3 goes to current hub 21 100.0 % of its demand.
+
+ Customer 4 goes to current hub 15 100.0 % of its demand.
+
+ Customer 5 goes to current hub 52 100.0 % of its demand.
+
+ Customer 7 goes to current hub 24 100.0 % of its demand.
+
+ Customer 9 goes to current hub 5 100.0 % of its demand.
+
+ Customer 10 goes to current hub 5 100.0 % of its demand.
+
+ Customer 11 goes to current hub 46 100.0 % of its demand.
+
+ Customer 12 goes to current hub 22 100.0 % of its demand.
+
+ Customer 13 goes to current hub 2 100.0 % of its demand.
+
+ Customer 14 goes to current hub 13 100.0 % of its demand.
+
+ Customer 15 goes to current hub 39 100.0 % of its demand.
+
+ Customer 16 goes to current hub 26 100.0 % of its demand.
+
+ Customer 17 goes to current hub 41 100.0 % of its demand.
+
+ Customer 18 goes to current hub 44 100.0 % of its demand.
+
+ Customer 19 goes to current hub 15 100.0 % of its demand.
+
+ Customer 20 goes to current hub 21 100.0 % of its demand.
+
+ Customer 21 goes to current hub 54 100.0 % of its demand.
+
+ Customer 22 goes to current hub 47 100.0 % of its demand.
+
+ Customer 23 goes to current hub 39 100.0 % of its demand.
+
+ Customer 24 goes to current hub 39 100.0 % of its demand.
+
+ Customer 25 goes to current hub 47 100.0 % of its demand.
+
+ Customer 26 goes to current hub 47 100.0 % of its demand.
+
+ Customer 27 goes to current hub 47 100.0 % of its demand.
+
+ Customer 29 goes to current hub 55 100.0 % of its demand.
+
+ Customer 30 goes to current hub 39 100.0 % of its demand.
+
+ Customer 31 goes to current hub 47 100.0 % of its demand.
+
+ Customer 32 goes to current hub 39 100.0 % of its demand.
+
+ Customer 33 goes to current hub 17 100.0 % of its demand.
+
+ Customer 34 goes to current hub 30 100.0 % of its demand.
+
+ Customer 35 goes to current hub 39 100.0 % of its demand.
+
+ Customer 36 goes to current hub 57 100.0 % of its demand.
+
+ Customer 38 goes to current hub 55 100.0 % of its demand.
+
+ Customer 39 goes to current hub 41 100.0 % of its demand.
+
+ Customer 41 goes to current hub 28 100.0 % of its demand.
+
+ Customer 42 goes to current hub 22 100.0 % of its demand.
+
+ Customer 43 goes to current hub 30 100.0 % of its demand.
+
+ Customer 44 goes to current hub 8 100.0 % of its demand.
+
+ Customer 45 goes to current hub 13 100.0 % of its demand.
+
+ Customer 47 goes to current hub 52 100.0 % of its demand.
+
+ Customer 49 goes to current hub 55 100.0 % of its demand.
+
+ Customer 52 goes to current hub 53 100.0 % of its demand.
+
+ Customer 53 goes to current hub 42 100.0 % of its demand.
+
+ Customer 54 goes to current hub 17 100.0 % of its demand.
+
+ Customer 55 goes to current hub 23 100.0 % of its demand.
+
+ Customer 56 goes to current hub 23 100.0 % of its demand.
+
+ Customer 57 goes to current hub 16 100.0 % of its demand.
+
+ Customer 58 goes to current hub 56 100.0 % of its demand.
+
+ Customer 59 goes to current hub 56 100.0 % of its demand.
+
+ Customer 60 goes to current hub 54 100.0 % of its demand.
+
+ Customer 61 goes to current hub 52 100.0 % of its demand.
+
+ Customer 62 goes to current hub 7 100.0 % of its demand.
+
+ Customer 63 goes to current hub 54 100.0 % of its demand.
+
+ Customer 65 goes to current hub 10 100.0 % of its demand.
+
+ Customer 66 goes to current hub 56 100.0 % of its demand.
+
+ Customer 67 goes to current hub 46 100.0 % of its demand.
+
+ Customer 68 goes to current hub 21 100.0 % of its demand.
+
+ Customer 69 goes to current hub 21 100.0 % of its demand.
+
+ Customer 70 goes to current hub 5 100.0 % of its demand.
+
+ Customer 71 goes to current hub 6 100.0 % of its demand.
+
+ Customer 73 goes to current hub 38 100.0 % of its demand.
+
+ Customer 75 goes to current hub 24 100.0 % of its demand.
+
+ Customer 76 goes to current hub 23 100.0 % of its demand.
+
+ Customer 77 goes to current hub 21 100.0 % of its demand.
+
+ Customer 79 goes to current hub 32 100.0 % of its demand.
+
+ Customer 80 goes to current hub 25 100.0 % of its demand.
+
+ Customer 81 goes to current hub 26 100.0 % of its demand.
+
+ Customer 82 goes to current hub 33 100.0 % of its demand.
+
+ Customer 83 goes to current hub 41 100.0 % of its demand.
+
+ Customer 86 goes to current hub 25 100.0 % of its demand.
+
+ Customer 87 goes to current hub 19 100.0 % of its demand.
+
+ Customer 88 goes to current hub 54 100.0 % of its demand.
+
+ Customer 89 goes to current hub 4 100.0 % of its demand.
+
+ Customer 90 goes to current hub 55 100.0 % of its demand.
+
+ Customer 91 goes to current hub 47 100.0 % of its demand.
+
+ Customer 92 goes to current hub 47 100.0 % of its demand.
+
+ Customer 93 goes to current hub 39 100.0 % of its demand.
+
+ Customer 94 goes to current hub 15 100.0 % of its demand.
+
+ Customer 95 goes to current hub 39 100.0 % of its demand.
+
+ Customer 96 goes to current hub 16 100.0 % of its demand.
+
+ Customer 97 goes to current hub 47 100.0 % of its demand.
+
+ Customer 98 goes to current hub 47 100.0 % of its demand.
+
+ Customer 99 goes to current hub 47 100.0 % of its demand.
+
+ Customer 100 goes to current hub 47 100.0 % of its demand.
+
+ Customer 101 goes to current hub 42 100.0 % of its demand.
+
+ Customer 103 goes to current hub 49 100.0 % of its demand.
+
+ Customer 104 goes to current hub 42 100.0 % of its demand.
+
+ Customer 105 goes to current hub 56 100.0 % of its demand.
+
+ Customer 106 goes to current hub 54 100.0 % of its demand.
+
+ Customer 107 goes to current hub 54 100.0 % of its demand.
+
+ Customer 108 goes to current hub 30 100.0 % of its demand.
+
+ Customer 110 goes to current hub 2 100.0 % of its demand.
+
+ Customer 111 goes to current hub 21 100.0 % of its demand.
+
+ Customer 112 goes to current hub 10 100.0 % of its demand.
+
+ Customer 113 goes to current hub 53 100.0 % of its demand.
+
+ Customer 115 goes to current hub 53 100.0 % of its demand.
+
+ Customer 116 goes to current hub 6 100.0 % of its demand.
+
+ Customer 117 goes to current hub 11 100.0 % of its demand.
+
+ Customer 118 goes to current hub 24 100.0 % of its demand.
+
+ Customer 119 goes to current hub 8 100.0 % of its demand.
+
+ Customer 120 goes to current hub 11 100.0 % of its demand.
+
+ Customer 121 goes to current hub 20 100.0 % of its demand.
+
+ Customer 122 goes to current hub 10 100.0 % of its demand.
+
+ Customer 124 goes to current hub 5 100.0 % of its demand.
+
+ Customer 125 goes to current hub 21 100.0 % of its demand.
+
+ Customer 126 goes to current hub 7 100.0 % of its demand.
+
+ Customer 127 goes to current hub 24 100.0 % of its demand.
+
+ Customer 128 goes to current hub 40 100.0 % of its demand.
+
+ Customer 129 goes to current hub 55 100.0 % of its demand.
+
+ Customer 130 goes to current hub 53 100.0 % of its demand.
+
+ Customer 131 goes to current hub 13 100.0 % of its demand.
+
+ Customer 132 goes to current hub 31 100.0 % of its demand.
+
+ Customer 133 goes to current hub 13 100.0 % of its demand.
+
+ Customer 134 goes to current hub 51 100.0 % of its demand.
+
+ Customer 135 goes to current hub 26 100.0 % of its demand.
+
+ Customer 136 goes to current hub 55 100.0 % of its demand.
+
+ Customer 137 goes to current hub 10 100.0 % of its demand.
+
+ Customer 138 goes to current hub 26 100.0 % of its demand.
+
+ Customer 140 goes to current hub 3 100.0 % of its demand.
+
+ Customer 141 goes to current hub 36 100.0 % of its demand.
+
+ Customer 142 goes to current hub 19 100.0 % of its demand.
+
+ Customer 143 goes to current hub 26 100.0 % of its demand.
+
+ Customer 144 goes to current hub 44 100.0 % of its demand.
+
+ Customer 146 goes to current hub 37 100.0 % of its demand.
+
+ Customer 147 goes to current hub 45 100.0 % of its demand.
+
+ Customer 148 goes to current hub 53 100.0 % of its demand.
+
+ Customer 149 goes to current hub 47 100.0 % of its demand.
+
+ Customer 152 goes to current hub 57 100.0 % of its demand.
+
+ Customer 153 goes to current hub 45 100.0 % of its demand.
+
+ Customer 154 goes to current hub 21 100.0 % of its demand.
+
+ Customer 155 goes to current hub 21 100.0 % of its demand.
+
+ Customer 156 goes to current hub 21 100.0 % of its demand.
+
+ Customer 157 goes to current hub 56 100.0 % of its demand.
+
+ Customer 158 goes to current hub 49 100.0 % of its demand.
+
+ Customer 160 goes to current hub 21 100.0 % of its demand.
+
+ Customer 161 goes to current hub 2 100.0 % of its demand.
+
+ Customer 162 goes to current hub 52 100.0 % of its demand.
+
+ Customer 165 goes to current hub 53 100.0 % of its demand.
+
+ Customer 166 goes to current hub 45 100.0 % of its demand.
+
+ Customer 167 goes to current hub 5 100.0 % of its demand.
+
+ Customer 168 goes to current hub 29 100.0 % of its demand.
+
+ Customer 169 goes to current hub 32 100.0 % of its demand.
+
+ Customer 170 goes to current hub 23 100.0 % of its demand.
+
+ Customer 171 goes to current hub 23 100.0 % of its demand.
+
+ Customer 172 goes to current hub 53 100.0 % of its demand.
+
+ Customer 173 goes to current hub 40 100.0 % of its demand.
+
+ Customer 174 goes to current hub 48 100.0 % of its demand.
+
+ Customer 175 goes to current hub 35 100.0 % of its demand.
+
+ Customer 176 goes to current hub 14 100.0 % of its demand.
+
+ Customer 177 goes to current hub 4 100.0 % of its demand.
+
+ Customer 178 goes to current hub 13 100.0 % of its demand.
+
+ Customer 179 goes to current hub 8 100.0 % of its demand.
+
+ Customer 180 goes to current hub 6 100.0 % of its demand.
+
+ Customer 181 goes to current hub 55 100.0 % of its demand.
+
+ Customer 182 goes to current hub 23 100.0 % of its demand.
+
+ Customer 183 goes to current hub 46 100.0 % of its demand.
+
+ Customer 184 goes to current hub 53 100.0 % of its demand.
+
+ Customer 185 goes to current hub 54 100.0 % of its demand.
+
+ Customer 187 goes to current hub 32 100.0 % of its demand.
+
+ Customer 188 goes to current hub 6 100.0 % of its demand.
+
+ Customer 189 goes to current hub 7 100.0 % of its demand.
+
+ Customer 190 goes to current hub 18 100.0 % of its demand.
+
+ Customer 191 goes to current hub 23 100.0 % of its demand.
+
+ Customer 192 goes to current hub 41 100.0 % of its demand.
+
+ Customer 193 goes to current hub 1 100.0 % of its demand.
+
+ Customer 194 goes to current hub 57 100.0 % of its demand.
+
+ Customer 195 goes to current hub 28 100.0 % of its demand.
+
+ Customer 196 goes to current hub 51 100.0 % of its demand.
+
+ Customer 198 goes to current hub 15 100.0 % of its demand.
+
+ Customer 199 goes to current hub 33 100.0 % of its demand.
+
+ Customer 203 goes to current hub 53 100.0 % of its demand.
+
+ Customer 205 goes to current hub 42 100.0 % of its demand.
+
+ Customer 206 goes to current hub 42 100.0 % of its demand.
+
+ Customer 207 goes to current hub 40 100.0 % of its demand.
+
+ Customer 208 goes to current hub 4 100.0 % of its demand.
+
+ Customer 209 goes to current hub 2 100.0 % of its demand.
+
+ Customer 212 goes to current hub 40 100.0 % of its demand.
+
+ Customer 213 goes to current hub 16 100.0 % of its demand.
+
+ Customer 214 goes to current hub 54 100.0 % of its demand.
+
+ Customer 215 goes to current hub 16 100.0 % of its demand.
+
+ Customer 216 goes to current hub 56 100.0 % of its demand.
+
+ Customer 217 goes to current hub 1 100.0 % of its demand.
+
+ Customer 218 goes to current hub 3 100.0 % of its demand.
+
+ Customer 219 goes to current hub 37 100.0 % of its demand.
+
+ Customer 220 goes to current hub 23 100.0 % of its demand.
+
+ Customer 221 goes to current hub 45 100.0 % of its demand.
+
+ Customer 222 goes to current hub 44 100.0 % of its demand.
+
+ Customer 225 goes to current hub 17 100.0 % of its demand.
+
+ Customer 226 goes to current hub 54 100.0 % of its demand.
+
+ Customer 228 goes to current hub 45 100.0 % of its demand.
+
+ Customer 229 goes to current hub 26 100.0 % of its demand.
+
+ Customer 232 goes to current hub 40 100.0 % of its demand.
+
+ Customer 233 goes to current hub 16 100.0 % of its demand.
+
+ Customer 234 goes to current hub 56 100.0 % of its demand.
+
+ Customer 235 goes to current hub 48 100.0 % of its demand.
+
+ Customer 236 goes to current hub 11 100.0 % of its demand.
+
+ Customer 238 goes to current hub 44 100.0 % of its demand.
+
+ Customer 239 goes to current hub 10 100.0 % of its demand.
+
+ Customer 240 goes to current hub 4 100.0 % of its demand.
+
+ Customer 241 goes to current hub 40 100.0 % of its demand.
+
+ Customer 242 goes to current hub 10 100.0 % of its demand.
+
+ Customer 243 goes to current hub 46 100.0 % of its demand.
+
+ Customer 244 goes to current hub 46 100.0 % of its demand.
+
+ Customer 245 goes to current hub 7 100.0 % of its demand.
+
+ Customer 246 goes to current hub 25 100.0 % of its demand.
+
+ Customer 247 goes to current hub 30 100.0 % of its demand.
+
+ Customer 248 goes to current hub 55 100.0 % of its demand.
+
+ Customer 249 goes to current hub 8 100.0 % of its demand.
+
+ Customer 250 goes to current hub 43 100.0 % of its demand.
+
+ Customer 251 goes to current hub 21 100.0 % of its demand.
+
+ Customer 252 goes to current hub 25 100.0 % of its demand.
+
+ Customer 253 goes to current hub 52 100.0 % of its demand.
+
+ Customer 254 goes to current hub 7 100.0 % of its demand.
+
+ Customer 256 goes to current hub 35 100.0 % of its demand.
+
+ Customer 257 goes to current hub 25 100.0 % of its demand.
+
+ Customer 258 goes to current hub 55 100.0 % of its demand.
+
+ Customer 259 goes to current hub 26 100.0 % of its demand.
+
+ Customer 260 goes to current hub 33 100.0 % of its demand.
+
+ Customer 261 goes to current hub 26 100.0 % of its demand.
+
+ Customer 264 goes to current hub 56 100.0 % of its demand.
+
+ Customer 265 goes to current hub 40 100.0 % of its demand.
+
+ Customer 266 goes to current hub 43 100.0 % of its demand.
+
+ Customer 267 goes to current hub 17 100.0 % of its demand.
+
+ Customer 268 goes to current hub 25 100.0 % of its demand.
+
+ Customer 269 goes to current hub 53 100.0 % of its demand.
+
+ Customer 270 goes to current hub 33 100.0 % of its demand.
+
+ Customer 271 goes to current hub 11 100.0 % of its demand.
+
+ Customer 272 goes to current hub 13 100.0 % of its demand.
+
+ Customer 273 goes to current hub 32 100.0 % of its demand.
+
+ Customer 274 goes to current hub 21 100.0 % of its demand.
+
+ Customer 276 goes to current hub 40 100.0 % of its demand.
+
+ Customer 277 goes to current hub 40 100.0 % of its demand.
+
+ Customer 278 goes to current hub 44 100.0 % of its demand.
+
+ Customer 279 goes to current hub 55 100.0 % of its demand.
+
+ Customer 280 goes to current hub 48 100.0 % of its demand.
+
+ Customer 281 goes to current hub 5 100.0 % of its demand.
+
+ Customer 282 goes to current hub 7 100.0 % of its demand.
+
+ Customer 283 goes to current hub 52 100.0 % of its demand.
+
+ Customer 284 goes to current hub 47 100.0 % of its demand.
+
+ Customer 285 goes to current hub 37 100.0 % of its demand.
+
+ Customer 287 goes to current hub 10 100.0 % of its demand.
+
+ Customer 288 goes to current hub 1 100.0 % of its demand.
+
+ Customer 289 goes to current hub 45 100.0 % of its demand.
+
+ Customer 290 goes to current hub 23 100.0 % of its demand.
+
+ Customer 291 goes to current hub 39 100.0 % of its demand.
+
+ Customer 292 goes to current hub 41 100.0 % of its demand.
+
+ Customer 293 goes to current hub 55 100.0 % of its demand.
+
+ Customer 294 goes to current hub 23 100.0 % of its demand.
+
+ Customer 295 goes to current hub 13 100.0 % of its demand.
+
+ Customer 296 goes to current hub 22 100.0 % of its demand.
+
+ Customer 297 goes to current hub 24 100.0 % of its demand.
+
+ Customer 298 goes to current hub 25 100.0 % of its demand.
+
+ Customer 300 goes to current hub 47 100.0 % of its demand.
+
+ Customer 301 goes to current hub 10 100.0 % of its demand.
+
+ Customer 302 goes to current hub 52 100.0 % of its demand.
+
+ Customer 303 goes to current hub 56 100.0 % of its demand.
+
+ Customer 304 goes to current hub 42 100.0 % of its demand.
+
+ Customer 305 goes to current hub 6 100.0 % of its demand.
+
+ Customer 306 goes to current hub 52 100.0 % of its demand.
+
+ Customer 307 goes to current hub 13 100.0 % of its demand.
+
+ Customer 308 goes to current hub 41 100.0 % of its demand.
+
+ Customer 309 goes to current hub 54 100.0 % of its demand.
+
+ Customer 310 goes to current hub 52 100.0 % of its demand.
+
+ Customer 311 goes to current hub 24 100.0 % of its demand.
+
+ Customer 312 goes to current hub 4 100.0 % of its demand.
+
+ Customer 313 goes to current hub 4 100.0 % of its demand.
+
+ Customer 314 goes to current hub 47 100.0 % of its demand.
+
+ Customer 315 goes to current hub 47 100.0 % of its demand.
+
+ Customer 316 goes to current hub 39 100.0 % of its demand.
+
+ Customer 317 goes to current hub 39 100.0 % of its demand.
+
+ Customer 318 goes to current hub 47 100.0 % of its demand.
+
+ Customer 319 goes to current hub 47 100.0 % of its demand.
+
+ Customer 320 goes to current hub 56 100.0 % of its demand.
+
+ Customer 321 goes to current hub 55 100.0 % of its demand.
+
+ Customer 323 goes to current hub 28 100.0 % of its demand.
+
+ Customer 325 goes to current hub 21 100.0 % of its demand.
+
+ Customer 326 goes to current hub 36 100.0 % of its demand.
+
+ Customer 327 goes to current hub 2 100.0 % of its demand.
+
+ Customer 328 goes to current hub 21 100.0 % of its demand.
+
+ Customer 329 goes to current hub 11 100.0 % of its demand.
+
+ Customer 330 goes to current hub 49 100.0 % of its demand.
+
+ Customer 331 goes to current hub 41 100.0 % of its demand.
+
+ Customer 332 goes to current hub 29 100.0 % of its demand.
+
+ Customer 333 goes to current hub 55 100.0 % of its demand.
+
+ Customer 334 goes to current hub 10 100.0 % of its demand.
+
+ Customer 335 goes to current hub 56 100.0 % of its demand.
+
+ Customer 336 goes to current hub 28 100.0 % of its demand.
+
+ Customer 337 goes to current hub 5 100.0 % of its demand.
+
+ Customer 338 goes to current hub 32 100.0 % of its demand.
+
+ Customer 339 goes to current hub 38 100.0 % of its demand.
+
+ Customer 340 goes to current hub 42 100.0 % of its demand.
+
+ Customer 341 goes to current hub 46 100.0 % of its demand.
+
+ Customer 342 goes to current hub 10 100.0 % of its demand.
+
+ Customer 343 goes to current hub 57 100.0 % of its demand.
+
+ Customer 344 goes to current hub 24 100.0 % of its demand.
+
+ Customer 345 goes to current hub 54 100.0 % of its demand.
+
+ Customer 346 goes to current hub 22 100.0 % of its demand.
+
+ Customer 347 goes to current hub 13 100.0 % of its demand.
+
+ Customer 348 goes to current hub 53 100.0 % of its demand.
+
+ Customer 349 goes to current hub 53 100.0 % of its demand.
+
+ Customer 350 goes to current hub 26 100.0 % of its demand.
+
+ Customer 351 goes to current hub 10 100.0 % of its demand.
+
+ Customer 353 goes to current hub 42 100.0 % of its demand.
+
+ Customer 354 goes to current hub 57 100.0 % of its demand.
+
+ Customer 355 goes to current hub 7 100.0 % of its demand.
+
+ Customer 356 goes to current hub 39 100.0 % of its demand.
+
+ Customer 357 goes to current hub 55 100.0 % of its demand.
+
+ Customer 358 goes to current hub 33 100.0 % of its demand.
+
+ Customer 359 goes to current hub 53 100.0 % of its demand.
+
+ Customer 361 goes to current hub 26 100.0 % of its demand.
+
+ Customer 362 goes to current hub 6 100.0 % of its demand.
+
+ Customer 363 goes to current hub 21 100.0 % of its demand.
+
+ Customer 364 goes to current hub 29 100.0 % of its demand.
+
+ Customer 365 goes to current hub 53 100.0 % of its demand.
+
+ Customer 367 goes to current hub 15 100.0 % of its demand.
+
+ Customer 369 goes to current hub 13 100.0 % of its demand.
+
+ Customer 370 goes to current hub 33 100.0 % of its demand.
+
+ Customer 371 goes to current hub 33 100.0 % of its demand.
+
+ Customer 372 goes to current hub 16 100.0 % of its demand.
+
+ Customer 373 goes to current hub 52 100.0 % of its demand.
+
+ Customer 375 goes to current hub 11 100.0 % of its demand.
+
+ Customer 376 goes to current hub 17 100.0 % of its demand.
+
+ Customer 377 goes to current hub 4 100.0 % of its demand.
+
+ Customer 378 goes to current hub 6 100.0 % of its demand.
+
+ Customer 379 goes to current hub 46 100.0 % of its demand.
+
+ Customer 380 goes to current hub 52 100.0 % of its demand.
+
+ Customer 381 goes to current hub 4 100.0 % of its demand.
+
+ Customer 382 goes to current hub 48 100.0 % of its demand.
+
+ Customer 383 goes to current hub 43 100.0 % of its demand.
+
+ Customer 384 goes to current hub 42 100.0 % of its demand.
+
+ Customer 385 goes to current hub 23 100.0 % of its demand.
+
+ Customer 386 goes to current hub 5 100.0 % of its demand.
+
+ Customer 387 goes to current hub 15 100.0 % of its demand.
+
+ Customer 388 goes to current hub 6 100.0 % of its demand.
+
+ Customer 389 goes to current hub 8 100.0 % of its demand.
+
+ Customer 390 goes to current hub 13 100.0 % of its demand.
+
+ Customer 391 goes to current hub 7 100.0 % of its demand.
+
+ Customer 392 goes to current hub 13 100.0 % of its demand.
+
+ Customer 393 goes to current hub 39 100.0 % of its demand.
+
+ Customer 394 goes to current hub 17 100.0 % of its demand.
+
+ Customer 396 goes to current hub 55 100.0 % of its demand.
+
+ Customer 397 goes to current hub 42 100.0 % of its demand.
+
+ Customer 399 goes to current hub 25 100.0 % of its demand.
+
+ Customer 402 goes to current hub 15 100.0 % of its demand.
+
+ Customer 403 goes to current hub 28 100.0 % of its demand.
+
+ Customer 404 goes to current hub 15 100.0 % of its demand.
+
+ Customer 408 goes to current hub 10 100.0 % of its demand.
+
+ Customer 409 goes to current hub 37 100.0 % of its demand.
+
+ Customer 410 goes to current hub 54 100.0 % of its demand.
+
+ Customer 411 goes to current hub 40 100.0 % of its demand.
+
+ Customer 412 goes to current hub 43 100.0 % of its demand.
+
+ Customer 413 goes to current hub 28 100.0 % of its demand.
+
+ Customer 414 goes to current hub 55 100.0 % of its demand.
+
+ Customer 415 goes to current hub 25 100.0 % of its demand.
+
+ Customer 416 goes to current hub 53 100.0 % of its demand.
+
+ Customer 417 goes to current hub 16 100.0 % of its demand.
+
+ Customer 418 goes to current hub 42 100.0 % of its demand.
+
+ Customer 419 goes to current hub 4 100.0 % of its demand.
+
+ Customer 420 goes to current hub 30 100.0 % of its demand.
+
+ Customer 421 goes to current hub 54 100.0 % of its demand.
+
+ Customer 423 goes to current hub 32 100.0 % of its demand.
+
+ Customer 424 goes to current hub 53 100.0 % of its demand.
+
+ Customer 425 goes to current hub 37 100.0 % of its demand.
+
+ Customer 426 goes to current hub 44 100.0 % of its demand.
+
+ Customer 427 goes to current hub 42 100.0 % of its demand.
+
+ Customer 431 goes to current hub 1 100.0 % of its demand.
+
+ Customer 432 goes to current hub 6 100.0 % of its demand.
+
+ Customer 433 goes to current hub 28 100.0 % of its demand.
+
+ Customer 435 goes to current hub 20 100.0 % of its demand.
+
+ Customer 436 goes to current hub 3 100.0 % of its demand.
+
+ Customer 441 goes to current hub 25 100.0 % of its demand.
+
+ Customer 443 goes to current hub 26 100.0 % of its demand.
+
+ Customer 446 goes to current hub 22 100.0 % of its demand.
+
+ Customer 447 goes to current hub 40 100.0 % of its demand.
+
+ Customer 448 goes to current hub 55 100.0 % of its demand.
+
+ Customer 449 goes to current hub 26 100.0 % of its demand.
+
+ Customer 450 goes to current hub 41 100.0 % of its demand.
+
+ Customer 452 goes to current hub 43 100.0 % of its demand.
+
+ Customer 453 goes to current hub 5 100.0 % of its demand.
+
+ Customer 455 goes to current hub 10 100.0 % of its demand.
+
+ Customer 457 goes to current hub 21 100.0 % of its demand.
+
+ Customer 459 goes to current hub 35 100.0 % of its demand.
+
+ Customer 460 goes to current hub 7 100.0 % of its demand.
+
+ Customer 461 goes to current hub 21 100.0 % of its demand.
+
+ Customer 462 goes to current hub 39 100.0 % of its demand.
+
+ Customer 463 goes to current hub 6 100.0 % of its demand.
+
+ Customer 464 goes to current hub 25 100.0 % of its demand.
+
+ Customer 465 goes to current hub 53 100.0 % of its demand.
+
+ Customer 466 goes to current hub 37 100.0 % of its demand.
+
+ Customer 468 goes to current hub 40 100.0 % of its demand.
+
+ Customer 469 goes to current hub 56 100.0 % of its demand.
+
+ Customer 470 goes to current hub 21 100.0 % of its demand.
+
+ Customer 471 goes to current hub 5 100.0 % of its demand.
+
+ Customer 472 goes to current hub 6 100.0 % of its demand.
+
+ Customer 473 goes to current hub 52 100.0 % of its demand.
+
+ Customer 474 goes to current hub 5 100.0 % of its demand.
+
+ Customer 475 goes to current hub 13 100.0 % of its demand.
+
+ Customer 476 goes to current hub 53 100.0 % of its demand.
+
+ Customer 477 goes to current hub 23 100.0 % of its demand.
+
+ Customer 478 goes to current hub 53 100.0 % of its demand.
+
+ Customer 479 goes to current hub 26 100.0 % of its demand.
+
+ Customer 480 goes to current hub 27 100.0 % of its demand.
+
+ Customer 481 goes to current hub 21 100.0 % of its demand.
+
+ Customer 482 goes to current hub 22 100.0 % of its demand.
+
+ Customer 483 goes to current hub 22 100.0 % of its demand.
+
+ Customer 484 goes to current hub 13 100.0 % of its demand.
+
+ Customer 486 goes to current hub 21 100.0 % of its demand.
+
+ Customer 487 goes to current hub 34 100.0 % of its demand.
+
+ Customer 488 goes to current hub 13 100.0 % of its demand.
+
+ Customer 489 goes to current hub 20 100.0 % of its demand.
+
+ Customer 490 goes to current hub 26 100.0 % of its demand.
+
+ Customer 492 goes to current hub 33 100.0 % of its demand.
+
+ Customer 493 goes to current hub 55 100.0 % of its demand.
+
+ Customer 494 goes to current hub 16 100.0 % of its demand.
+
+ Customer 495 goes to current hub 5 100.0 % of its demand.
+
+ Customer 496 goes to current hub 5 100.0 % of its demand.
+
+ Customer 497 goes to current hub 5 100.0 % of its demand.
+
+ Customer 498 goes to current hub 39 100.0 % of its demand.
+
+ Customer 499 goes to current hub 9 100.0 % of its demand.
+
+ Customer 500 goes to current hub 27 100.0 % of its demand.
+
+ Customer 501 goes to current hub 52 100.0 % of its demand.
+
+ Customer 502 goes to current hub 28 100.0 % of its demand.
+
+ Customer 503 goes to current hub 27 100.0 % of its demand.
+
+ Customer 504 goes to current hub 3 100.0 % of its demand.
+
+ Customer 505 goes to current hub 4 100.0 % of its demand.
+
+ Customer 506 goes to current hub 20 100.0 % of its demand.
+
+ Customer 507 goes to current hub 40 100.0 % of its demand.
+
+ Customer 508 goes to current hub 48 100.0 % of its demand.
+
+ Customer 509 goes to current hub 54 100.0 % of its demand.
+
+ Customer 510 goes to current hub 6 100.0 % of its demand.
+
+ Customer 511 goes to current hub 5 100.0 % of its demand.
+
+ Customer 512 goes to current hub 39 100.0 % of its demand.
+
+ Customer 513 goes to current hub 27 100.0 % of its demand.
+
+ Customer 514 goes to current hub 5 100.0 % of its demand.
+
+ Customer 515 goes to current hub 25 100.0 % of its demand.
+
+ Customer 516 goes to current hub 55 100.0 % of its demand.
+
+ Customer 517 goes to current hub 42 100.0 % of its demand.
+
+ Customer 518 goes to current hub 27 100.0 % of its demand.
+
+ Customer 519 goes to current hub 28 100.0 % of its demand.
+
+ Customer 520 goes to current hub 38 100.0 % of its demand.
+
+ Customer 521 goes to current hub 52 100.0 % of its demand.
+
+ Customer 522 goes to current hub 11 100.0 % of its demand.
+
+ Customer 524 goes to current hub 13 100.0 % of its demand.
+
+ Customer 525 goes to current hub 21 100.0 % of its demand.
+
+ Customer 526 goes to current hub 39 100.0 % of its demand.
+
+ Customer 528 goes to current hub 33 100.0 % of its demand.
+
+ Customer 529 goes to current hub 55 100.0 % of its demand.
+
+ Customer 530 goes to current hub 26 100.0 % of its demand.
+
+ Customer 532 goes to current hub 56 100.0 % of its demand.
+
+ Customer 533 goes to current hub 43 100.0 % of its demand.
+
+ Customer 534 goes to current hub 36 100.0 % of its demand.
+
+ Customer 535 goes to current hub 1 100.0 % of its demand.
+
+ Customer 536 goes to current hub 28 100.0 % of its demand.
+
+ Customer 537 goes to current hub 20 100.0 % of its demand.
+
+ Customer 538 goes to current hub 33 100.0 % of its demand.
+
+ Customer 539 goes to current hub 53 100.0 % of its demand.
+
+ Customer 540 goes to current hub 56 100.0 % of its demand.
+
+ Customer 542 goes to current hub 1 100.0 % of its demand.
+
+ Customer 543 goes to current hub 42 100.0 % of its demand.
+
+ Customer 544 goes to current hub 21 100.0 % of its demand.
+
+ Customer 545 goes to current hub 29 100.0 % of its demand.
+
+ Customer 547 goes to current hub 40 100.0 % of its demand.
+
+ Customer 550 goes to current hub 56 100.0 % of its demand.
+
+ Customer 551 goes to current hub 6 100.0 % of its demand.
+
+ Customer 552 goes to current hub 32 100.0 % of its demand.
+
+ Customer 553 goes to current hub 35 100.0 % of its demand.
+
+ Customer 554 goes to current hub 55 100.0 % of its demand.
+
+ Customer 555 goes to current hub 37 100.0 % of its demand.
+
+ Customer 556 goes to current hub 40 100.0 % of its demand.
+
+ Customer 557 goes to current hub 4 100.0 % of its demand.
+
+ Customer 558 goes to current hub 38 100.0 % of its demand.
+
+ Customer 559 goes to current hub 13 100.0 % of its demand.
+
+ Customer 560 goes to current hub 9 100.0 % of its demand.
+
+ Customer 562 goes to current hub 39 100.0 % of its demand.
+
+ Customer 563 goes to current hub 40 100.0 % of its demand.
+
+ Customer 565 goes to current hub 44 100.0 % of its demand.
+
+ Customer 566 goes to current hub 16 100.0 % of its demand.
+
+ Customer 567 goes to current hub 56 100.0 % of its demand.
+
+ Customer 568 goes to current hub 42 100.0 % of its demand.
+
+ Customer 570 goes to current hub 52 100.0 % of its demand.
+
+ Customer 571 goes to current hub 57 100.0 % of its demand.
+
+ Customer 573 goes to current hub 31 100.0 % of its demand.
+
+ Customer 574 goes to current hub 40 100.0 % of its demand.
+
+ Customer 575 goes to current hub 56 100.0 % of its demand.
+
+ Customer 576 goes to current hub 43 100.0 % of its demand.
+
+ Customer 577 goes to current hub 23 100.0 % of its demand.
+
+ Customer 578 goes to current hub 45 100.0 % of its demand.
+
+ Customer 579 goes to current hub 5 100.0 % of its demand.
+
+ Customer 580 goes to current hub 5 100.0 % of its demand.
+
+ Customer 581 goes to current hub 16 100.0 % of its demand.
+
+ Customer 582 goes to current hub 37 100.0 % of its demand.
+
+ Customer 583 goes to current hub 19 100.0 % of its demand.
+
+ Customer 585 goes to current hub 5 100.0 % of its demand.
+
+ Customer 586 goes to current hub 42 100.0 % of its demand.
+
+ Customer 587 goes to current hub 46 100.0 % of its demand.
+
+ Customer 588 goes to current hub 42 100.0 % of its demand.
+
+ Customer 589 goes to current hub 32 100.0 % of its demand.
+
+ Customer 591 goes to current hub 54 100.0 % of its demand.
+
+ Customer 592 goes to current hub 47 100.0 % of its demand.
+
+ Customer 593 goes to current hub 15 100.0 % of its demand.
+
+ Customer 594 goes to current hub 40 100.0 % of its demand.
+
+ Customer 596 goes to current hub 40 100.0 % of its demand.
+
+ Customer 598 goes to current hub 2 100.0 % of its demand.
+
+ Customer 599 goes to current hub 28 100.0 % of its demand.
+
+ Customer 600 goes to current hub 3 100.0 % of its demand.
+
+ Customer 601 goes to current hub 13 100.0 % of its demand.
+
+ Customer 602 goes to current hub 1 100.0 % of its demand.
+
+ Customer 604 goes to current hub 1 100.0 % of its demand.
+
+ Customer 605 goes to current hub 53 100.0 % of its demand.
+
+ Customer 606 goes to current hub 54 100.0 % of its demand.
+
+ Customer 607 goes to current hub 53 100.0 % of its demand.
+
+ Customer 608 goes to current hub 23 100.0 % of its demand.
+
+ Customer 609 goes to current hub 21 100.0 % of its demand.
+
+ Customer 610 goes to current hub 25 100.0 % of its demand.
+
+ Customer 611 goes to current hub 9 100.0 % of its demand.
+
+ Customer 612 goes to current hub 37 100.0 % of its demand.
+
+ Customer 613 goes to current hub 33 100.0 % of its demand.
+
+ Customer 614 goes to current hub 3 100.0 % of its demand.
+
+ Customer 616 goes to current hub 56 100.0 % of its demand.
+
+ Customer 617 goes to current hub 27 100.0 % of its demand.
+
+ Customer 618 goes to current hub 52 100.0 % of its demand.
+
+ Customer 619 goes to current hub 30 100.0 % of its demand.
+
+ Customer 620 goes to current hub 47 100.0 % of its demand.
+
+ Customer 623 goes to current hub 42 100.0 % of its demand.
+
+ Customer 624 goes to current hub 28 100.0 % of its demand.
+
+ Customer 625 goes to current hub 8 100.0 % of its demand.
+
+ Customer 626 goes to current hub 47 100.0 % of its demand.
+
+ Customer 627 goes to current hub 47 100.0 % of its demand.
+
+ Customer 628 goes to current hub 47 100.0 % of its demand.
+
+ Customer 629 goes to current hub 39 100.0 % of its demand.
+
+ Customer 630 goes to current hub 47 100.0 % of its demand.
+
+ Customer 631 goes to current hub 39 100.0 % of its demand.
+
+ Customer 632 goes to current hub 21 100.0 % of its demand.
+
+ Customer 633 goes to current hub 48 100.0 % of its demand.
+
+ Customer 634 goes to current hub 42 100.0 % of its demand.
+
+ Customer 635 goes to current hub 21 100.0 % of its demand.
+
+ Customer 636 goes to current hub 31 100.0 % of its demand.
+
+ Customer 637 goes to current hub 7 100.0 % of its demand.
+
+ Customer 638 goes to current hub 39 100.0 % of its demand.
+
+ Customer 640 goes to current hub 40 100.0 % of its demand.
+
+ Customer 641 goes to current hub 21 100.0 % of its demand.
+
+ Customer 642 goes to current hub 28 100.0 % of its demand.
+
+ Customer 643 goes to current hub 5 100.0 % of its demand.
+
+ Customer 645 goes to current hub 16 100.0 % of its demand.
+
+ Customer 647 goes to current hub 40 100.0 % of its demand.
+
+ Customer 648 goes to current hub 56 100.0 % of its demand.
+
+ Customer 649 goes to current hub 17 100.0 % of its demand.
+
+ Customer 650 goes to current hub 15 100.0 % of its demand.
+
+ Customer 651 goes to current hub 1 100.0 % of its demand.
+
+ Customer 652 goes to current hub 39 100.0 % of its demand.
+
+ Customer 653 goes to current hub 52 100.0 % of its demand.
+
+ Customer 654 goes to current hub 52 100.0 % of its demand.
+
+ Customer 655 goes to current hub 17 100.0 % of its demand.
+
+ Customer 656 goes to current hub 8 100.0 % of its demand.
+
+ Customer 657 goes to current hub 39 100.0 % of its demand.
+
+ Customer 658 goes to current hub 16 100.0 % of its demand.
+
+ Customer 661 goes to current hub 16 100.0 % of its demand.
+
+ Customer 662 goes to current hub 16 100.0 % of its demand.
+
+ Customer 663 goes to current hub 1 100.0 % of its demand.
+
+ Customer 664 goes to current hub 42 100.0 % of its demand.
+
+ Customer 665 goes to current hub 6 100.0 % of its demand.
+
+ Customer 666 goes to current hub 29 100.0 % of its demand.
+
+ Customer 667 goes to current hub 47 100.0 % of its demand.
+
+ Customer 668 goes to current hub 17 100.0 % of its demand.
+
+ Customer 669 goes to current hub 41 100.0 % of its demand.
+
+ Customer 671 goes to current hub 53 100.0 % of its demand.
+
+ Customer 672 goes to current hub 40 100.0 % of its demand.
+
+ Customer 674 goes to current hub 46 100.0 % of its demand.
+
+ Customer 675 goes to current hub 28 100.0 % of its demand.
+
+ Customer 676 goes to current hub 5 100.0 % of its demand.
+
+ Customer 677 goes to current hub 8 100.0 % of its demand.
+
+ Customer 678 goes to current hub 55 100.0 % of its demand.
+
+ Customer 679 goes to current hub 44 100.0 % of its demand.
+
+ Customer 680 goes to current hub 44 100.0 % of its demand.
+
+ Customer 681 goes to current hub 10 100.0 % of its demand.
+
+ Customer 683 goes to current hub 45 100.0 % of its demand.
+
+ Customer 684 goes to current hub 54 100.0 % of its demand.
+
+ Customer 685 goes to current hub 24 100.0 % of its demand.
+
+ Customer 686 goes to current hub 31 100.0 % of its demand.
+
+ Customer 687 goes to current hub 20 100.0 % of its demand.
+
+ Customer 690 goes to current hub 44 100.0 % of its demand.
+
+ Customer 691 goes to current hub 41 100.0 % of its demand.
+
+ Customer 692 goes to current hub 19 100.0 % of its demand.
+
+ Customer 693 goes to current hub 44 100.0 % of its demand.
+
+ Customer 694 goes to current hub 10 100.0 % of its demand.
+
+ Customer 695 goes to current hub 48 100.0 % of its demand.
+
+ Customer 696 goes to current hub 7 100.0 % of its demand.
+
+ Customer 697 goes to current hub 53 100.0 % of its demand.
+
+ Customer 698 goes to current hub 40 100.0 % of its demand.
+
+ Customer 699 goes to current hub 26 100.0 % of its demand.
+
+ Customer 700 goes to current hub 16 100.0 % of its demand.
+
+ Customer 701 goes to current hub 1 100.0 % of its demand.
+
+ Customer 703 goes to current hub 20 100.0 % of its demand.
+
+ Customer 705 goes to current hub 43 100.0 % of its demand.
+
+ Customer 706 goes to current hub 52 100.0 % of its demand.
+
+ Customer 707 goes to current hub 22 100.0 % of its demand.
+
+ Customer 711 goes to current hub 13 100.0 % of its demand.
+
+ Customer 712 goes to current hub 15 100.0 % of its demand.
+
+ Customer 713 goes to current hub 53 100.0 % of its demand.
+
+ Customer 714 goes to current hub 10 100.0 % of its demand.
+
+ Customer 716 goes to current hub 54 100.0 % of its demand.
+
+ Customer 718 goes to current hub 46 100.0 % of its demand.
+
+ Customer 719 goes to current hub 31 100.0 % of its demand.
+
+ Customer 720 goes to current hub 6 100.0 % of its demand.
+
+ Customer 721 goes to current hub 46 100.0 % of its demand.
+
+ Customer 722 goes to current hub 33 100.0 % of its demand.
+
+ Customer 724 goes to current hub 55 100.0 % of its demand.
+
+ Customer 725 goes to current hub 55 100.0 % of its demand.
+
+ Customer 726 goes to current hub 9 100.0 % of its demand.
+
+ Customer 727 goes to current hub 42 100.0 % of its demand.
+
+ Customer 729 goes to current hub 37 100.0 % of its demand.
+
+ Customer 731 goes to current hub 8 100.0 % of its demand.
+
+ Customer 732 goes to current hub 40 100.0 % of its demand.
+
+ Customer 734 goes to current hub 43 100.0 % of its demand.
+
+ Customer 735 goes to current hub 53 100.0 % of its demand.
+
+ Customer 736 goes to current hub 4 100.0 % of its demand.
+
+ Customer 738 goes to current hub 45 100.0 % of its demand.
+
+ Customer 739 goes to current hub 55 100.0 % of its demand.
+
+ Customer 740 goes to current hub 53 100.0 % of its demand.
+
+ Customer 741 goes to current hub 33 100.0 % of its demand.
+
+ Customer 742 goes to current hub 16 100.0 % of its demand.
+
+ Customer 743 goes to current hub 16 100.0 % of its demand.
+
+ Customer 744 goes to current hub 37 100.0 % of its demand.
+
+ Customer 745 goes to current hub 53 100.0 % of its demand.
+
+ Customer 746 goes to current hub 17 100.0 % of its demand.
+
+ Customer 747 goes to current hub 47 100.0 % of its demand.
+
+ Customer 748 goes to current hub 3 100.0 % of its demand.
+
+ Customer 749 goes to current hub 37 100.0 % of its demand.
+
+ Customer 750 goes to current hub 53 100.0 % of its demand.
+
+ Customer 751 goes to current hub 1 100.0 % of its demand.
+
+ Customer 752 goes to current hub 27 100.0 % of its demand.
+
+ Customer 753 goes to current hub 38 100.0 % of its demand.
+
+ Customer 754 goes to current hub 52 100.0 % of its demand.
+
+ Customer 755 goes to current hub 11 100.0 % of its demand.
+
+ Customer 756 goes to current hub 54 100.0 % of its demand.
+
+ Customer 757 goes to current hub 21 100.0 % of its demand.
+
+ Customer 758 goes to current hub 55 100.0 % of its demand.
+
+ Customer 759 goes to current hub 53 100.0 % of its demand.
+
+ Customer 760 goes to current hub 41 100.0 % of its demand.
+
+ Customer 762 goes to current hub 6 100.0 % of its demand.
+
+ Customer 763 goes to current hub 21 100.0 % of its demand.
+
+ Customer 765 goes to current hub 55 100.0 % of its demand.
+
+ Customer 766 goes to current hub 24 100.0 % of its demand.
+
+ Customer 767 goes to current hub 28 100.0 % of its demand.
+
+ Customer 768 goes to current hub 4 100.0 % of its demand.
+
+ Customer 769 goes to current hub 25 100.0 % of its demand.
+
+ Customer 770 goes to current hub 33 100.0 % of its demand.
+
+ Customer 773 goes to current hub 52 100.0 % of its demand.
+
+ Customer 774 goes to current hub 24 100.0 % of its demand.
+
+ Customer 775 goes to current hub 17 100.0 % of its demand.
+
+ Customer 776 goes to current hub 11 100.0 % of its demand.
+
+ Customer 777 goes to current hub 8 100.0 % of its demand.
+
+ Customer 778 goes to current hub 17 100.0 % of its demand.
+
+ Customer 779 goes to current hub 27 100.0 % of its demand.
+
+ Customer 780 goes to current hub 11 100.0 % of its demand.
+
+ Customer 781 goes to current hub 47 100.0 % of its demand.
+
+ Customer 782 goes to current hub 38 100.0 % of its demand.
+
+ Customer 783 goes to current hub 40 100.0 % of its demand.
+
+ Customer 784 goes to current hub 53 100.0 % of its demand.
+
+ Customer 785 goes to current hub 41 100.0 % of its demand.
+
+ Customer 786 goes to current hub 40 100.0 % of its demand.
+
+ Customer 787 goes to current hub 55 100.0 % of its demand.
+
+ Customer 788 goes to current hub 45 100.0 % of its demand.
+
+ Customer 790 goes to current hub 28 100.0 % of its demand.
+
+ Customer 791 goes to current hub 12 100.0 % of its demand.
+
+ Customer 792 goes to current hub 7 100.0 % of its demand.
+
+ Customer 793 goes to current hub 56 100.0 % of its demand.
+
+ Customer 794 goes to current hub 55 100.0 % of its demand.
+
+ Customer 795 goes to current hub 54 100.0 % of its demand.
+
+ Customer 796 goes to current hub 56 100.0 % of its demand.
+
+ Customer 799 goes to current hub 15 100.0 % of its demand.
+
+ Customer 801 goes to current hub 21 100.0 % of its demand.
+
+ Customer 802 goes to current hub 44 100.0 % of its demand.
+
+ Customer 803 goes to current hub 16 100.0 % of its demand.
+
+ Customer 804 goes to current hub 56 100.0 % of its demand.
+
+ Customer 805 goes to current hub 56 100.0 % of its demand.
+
+ Customer 806 goes to current hub 13 100.0 % of its demand.
+
+ Customer 808 goes to current hub 48 100.0 % of its demand.
+
+ Customer 809 goes to current hub 17 100.0 % of its demand.
+
+ Customer 811 goes to current hub 26 100.0 % of its demand.
+
+ Customer 812 goes to current hub 33 100.0 % of its demand.
+
+ Customer 813 goes to current hub 53 100.0 % of its demand.
+
+ Customer 815 goes to current hub 48 100.0 % of its demand.
+
+ Customer 816 goes to current hub 21 100.0 % of its demand.
+
+ Customer 817 goes to current hub 7 100.0 % of its demand.
+
+ Customer 819 goes to current hub 55 100.0 % of its demand.
+
+ Customer 821 goes to current hub 4 100.0 % of its demand.
+
+ Customer 823 goes to current hub 32 100.0 % of its demand.
+
+ Customer 824 goes to current hub 15 100.0 % of its demand.
+
+ Customer 825 goes to current hub 39 100.0 % of its demand.
+
+ Customer 827 goes to current hub 42 100.0 % of its demand.
+
+ Customer 828 goes to current hub 42 100.0 % of its demand.
+
+ Customer 829 goes to current hub 43 100.0 % of its demand.
+
+ Customer 830 goes to current hub 13 100.0 % of its demand.
+
+ Customer 831 goes to current hub 13 100.0 % of its demand.
+
+ Customer 832 goes to current hub 29 100.0 % of its demand.
+
+ Customer 833 goes to current hub 26 100.0 % of its demand.
+
+ Customer 835 goes to current hub 42 100.0 % of its demand.
+
+ Customer 836 goes to current hub 5 100.0 % of its demand.
+
+ Customer 837 goes to current hub 54 100.0 % of its demand.
+
+ Customer 838 goes to current hub 24 100.0 % of its demand.
+
+ Customer 839 goes to current hub 51 100.0 % of its demand.
+
+ Customer 840 goes to current hub 28 100.0 % of its demand.
+
+ Customer 841 goes to current hub 1 100.0 % of its demand.
+
+ Customer 842 goes to current hub 16 100.0 % of its demand.
+
+ Customer 843 goes to current hub 44 100.0 % of its demand.
+
+ Customer 844 goes to current hub 10 100.0 % of its demand.
+
+ Customer 845 goes to current hub 1 100.0 % of its demand.
+
+ Customer 846 goes to current hub 4 100.0 % of its demand.
+
+ Customer 847 goes to current hub 39 100.0 % of its demand.
+
+ Customer 848 goes to current hub 5 100.0 % of its demand.
+
+ Customer 849 goes to current hub 24 100.0 % of its demand.
+
+ Customer 851 goes to current hub 23 100.0 % of its demand.
+
+ Customer 853 goes to current hub 44 100.0 % of its demand.
+
+ Customer 854 goes to current hub 17 100.0 % of its demand.
+
+ Customer 855 goes to current hub 11 100.0 % of its demand.
+
+ Customer 856 goes to current hub 37 100.0 % of its demand.
+
+ Customer 857 goes to current hub 53 100.0 % of its demand.
+
+ Customer 859 goes to current hub 40 100.0 % of its demand.
+
+ Customer 860 goes to current hub 55 100.0 % of its demand.
+
+ Customer 861 goes to current hub 36 100.0 % of its demand.
+
+ Customer 862 goes to current hub 28 100.0 % of its demand.
+
+ Customer 863 goes to current hub 40 100.0 % of its demand.
+
+ Customer 864 goes to current hub 2 100.0 % of its demand.
+
+ Customer 865 goes to current hub 44 100.0 % of its demand.
+
+ Customer 867 goes to current hub 32 100.0 % of its demand.
+
+ Customer 868 goes to current hub 55 100.0 % of its demand.
+
+ Customer 869 goes to current hub 28 100.0 % of its demand.
+
+ Customer 870 goes to current hub 22 100.0 % of its demand.
+
+ Customer 871 goes to current hub 12 100.0 % of its demand.
+
+ Customer 872 goes to current hub 52 100.0 % of its demand.
+
+ Customer 873 goes to current hub 39 100.0 % of its demand.
+
+ Customer 874 goes to current hub 40 100.0 % of its demand.
+
+ Customer 875 goes to current hub 55 100.0 % of its demand.
+
+ Customer 876 goes to current hub 16 100.0 % of its demand.
+
+ Customer 877 goes to current hub 53 100.0 % of its demand.
+
+ Customer 879 goes to current hub 38 100.0 % of its demand.
+
+ Customer 880 goes to current hub 29 100.0 % of its demand.
+
+ Customer 881 goes to current hub 57 100.0 % of its demand.
+
+ Customer 882 goes to current hub 14 100.0 % of its demand.
+
+ Customer 883 goes to current hub 21 100.0 % of its demand.
+
+ Customer 884 goes to current hub 16 100.0 % of its demand.
+
+ Customer 887 goes to current hub 52 100.0 % of its demand.
+
+ Customer 888 goes to current hub 45 100.0 % of its demand.
+
+ Customer 889 goes to current hub 54 100.0 % of its demand.
+
+ Customer 890 goes to current hub 54 100.0 % of its demand.
+
+ Customer 891 goes to current hub 24 100.0 % of its demand.
+
+ Customer 892 goes to current hub 54 100.0 % of its demand.
+
+ Customer 893 goes to current hub 38 100.0 % of its demand.
+
+ Customer 895 goes to current hub 57 100.0 % of its demand.
+
+ Customer 896 goes to current hub 21 100.0 % of its demand.
+
+ Customer 897 goes to current hub 48 100.0 % of its demand.
+
+ Customer 898 goes to current hub 54 100.0 % of its demand.
+
+ Customer 899 goes to current hub 54 100.0 % of its demand.
+
+ Customer 900 goes to current hub 22 100.0 % of its demand.
+
+ Customer 901 goes to current hub 53 100.0 % of its demand.
+
+ Customer 902 goes to current hub 4 100.0 % of its demand.
+
+ Customer 903 goes to current hub 44 100.0 % of its demand.
+
+ Customer 904 goes to current hub 33 100.0 % of its demand.
+
+ Customer 905 goes to current hub 8 100.0 % of its demand.
+
+ Customer 907 goes to current hub 49 100.0 % of its demand.
+
+ Customer 909 goes to current hub 35 100.0 % of its demand.
+
+ Customer 910 goes to current hub 39 100.0 % of its demand.
+
+ Customer 911 goes to current hub 47 100.0 % of its demand.
+
+ Customer 912 goes to current hub 39 100.0 % of its demand.
+
+ Customer 913 goes to current hub 39 100.0 % of its demand.
+
+ Customer 914 goes to current hub 46 100.0 % of its demand.
+
+ Customer 915 goes to current hub 47 100.0 % of its demand.
+
+ Customer 916 goes to current hub 26 100.0 % of its demand.
+
+ Customer 917 goes to current hub 1 100.0 % of its demand.
+
+ Customer 918 goes to current hub 35 100.0 % of its demand.
+
+ Customer 919 goes to current hub 28 100.0 % of its demand.
+
+ Customer 920 goes to current hub 44 100.0 % of its demand.
+
+ Customer 921 goes to current hub 41 100.0 % of its demand.
+
+ Customer 922 goes to current hub 5 100.0 % of its demand.
+
+ Customer 923 goes to current hub 46 100.0 % of its demand.
+
+ Customer 924 goes to current hub 54 100.0 % of its demand.
+
+ Customer 925 goes to current hub 40 100.0 % of its demand.
+
+ Customer 926 goes to current hub 22 100.0 % of its demand.
+
+ Customer 927 goes to current hub 52 100.0 % of its demand.
+
+ Customer 928 goes to current hub 30 100.0 % of its demand.
+
+ Customer 929 goes to current hub 13 100.0 % of its demand.
+
+ Customer 930 goes to current hub 10 100.0 % of its demand.
+
+ Customer 931 goes to current hub 56 100.0 % of its demand.
+
+ Customer 933 goes to current hub 52 100.0 % of its demand.
+
+ Customer 934 goes to current hub 52 100.0 % of its demand.
+
+ Customer 935 goes to current hub 28 100.0 % of its demand.
+
+ Customer 936 goes to current hub 38 100.0 % of its demand.
+
+ Customer 937 goes to current hub 52 100.0 % of its demand.
+
+ Customer 938 goes to current hub 2 100.0 % of its demand.
+
+ Customer 939 goes to current hub 29 100.0 % of its demand.
+
+ Customer 940 goes to current hub 36 100.0 % of its demand.
+
+ Customer 942 goes to current hub 16 100.0 % of its demand.
+
+ Customer 943 goes to current hub 42 100.0 % of its demand.
+
+ Customer 944 goes to current hub 52 100.0 % of its demand.
+
+ Customer 945 goes to current hub 2 100.0 % of its demand.
+
+ Customer 946 goes to current hub 28 100.0 % of its demand.
+
+ Customer 947 goes to current hub 38 100.0 % of its demand.
+
+ Customer 948 goes to current hub 19 100.0 % of its demand.
+
+ Customer 949 goes to current hub 20 100.0 % of its demand.
+
+ Customer 950 goes to current hub 32 100.0 % of its demand.
+
+ Customer 951 goes to current hub 53 100.0 % of its demand.
+
+ Customer 952 goes to current hub 4 100.0 % of its demand.
+
+ Customer 954 goes to current hub 46 100.0 % of its demand.
+
+ Customer 955 goes to current hub 53 100.0 % of its demand.
+
+ Customer 956 goes to current hub 21 100.0 % of its demand.
+
+ Customer 957 goes to current hub 5 100.0 % of its demand.
+
+ Customer 958 goes to current hub 32 100.0 % of its demand.
+
+ Customer 959 goes to current hub 24 100.0 % of its demand.
+
+ Customer 960 goes to current hub 22 100.0 % of its demand.
+
+ Customer 961 goes to current hub 6 100.0 % of its demand.
+
+ Customer 962 goes to current hub 40 100.0 % of its demand.
+
+ Customer 964 goes to current hub 55 100.0 % of its demand.
+
+ Customer 965 goes to current hub 55 100.0 % of its demand.
+
+ Customer 966 goes to current hub 14 100.0 % of its demand.
+
+ Customer 967 goes to current hub 2 100.0 % of its demand.
+
+ Customer 968 goes to current hub 24 100.0 % of its demand.
+
+ Customer 969 goes to current hub 22 100.0 % of its demand.
+
+ Customer 971 goes to current hub 21 100.0 % of its demand.
+
+ Customer 972 goes to current hub 56 100.0 % of its demand.
+
+ Customer 973 goes to current hub 1 100.0 % of its demand.
+
+ Customer 974 goes to current hub 41 100.0 % of its demand.
+
+ Customer 975 goes to current hub 56 100.0 % of its demand.
+
+ Customer 976 goes to current hub 1 100.0 % of its demand.
+
+ Customer 977 goes to current hub 54 100.0 % of its demand.
+
+ Customer 978 goes to current hub 5 100.0 % of its demand.
+
+ Customer 979 goes to current hub 21 100.0 % of its demand.
+
+ Customer 980 goes to current hub 35 100.0 % of its demand.
+
+ Customer 981 goes to current hub 6 100.0 % of its demand.
+
+ Customer 983 goes to current hub 55 100.0 % of its demand.
+
+ Customer 984 goes to current hub 55 100.0 % of its demand.
+
+ Customer 985 goes to current hub 53 100.0 % of its demand.
+
+ Customer 986 goes to current hub 41 100.0 % of its demand.
+
+ Customer 987 goes to current hub 3 100.0 % of its demand.
+
+ Customer 988 goes to current hub 54 100.0 % of its demand.
+
+ Customer 989 goes to current hub 54 100.0 % of its demand.
+
+ Customer 990 goes to current hub 8 100.0 % of its demand.
+
+ Customer 991 goes to current hub 53 100.0 % of its demand.
+
+ Customer 993 goes to current hub 33 100.0 % of its demand.
+
+ Customer 994 goes to current hub 13 100.0 % of its demand.
+
+ Customer 995 goes to current hub 53 100.0 % of its demand.
+
+ Customer 996 goes to current hub 5 100.0 % of its demand.
+
+ Customer 997 goes to current hub 22 100.0 % of its demand.
+
+ Customer 999 goes to current hub 44 100.0 % of its demand.
+
+ Customer 1002 goes to current hub 19 100.0 % of its demand.
+
+ Customer 1003 goes to current hub 19 100.0 % of its demand.
+
+ Customer 1004 goes to current hub 40 100.0 % of its demand.
+
+ Customer 1005 goes to current hub 44 100.0 % of its demand.
+
+ Customer 1006 goes to current hub 54 100.0 % of its demand.
+
+ Customer 1007 goes to current hub 40 100.0 % of its demand.
+
+ Customer 1008 goes to current hub 42 100.0 % of its demand.
+
+ Customer 1009 goes to current hub 43 100.0 % of its demand.
+
+ Customer 1010 goes to current hub 6 100.0 % of its demand.
+
+ Customer 1012 goes to current hub 43 100.0 % of its demand.
+
+ Customer 1013 goes to current hub 10 100.0 % of its demand.
+
+ Customer 1014 goes to current hub 2 100.0 % of its demand.
+
+ Customer 1015 goes to current hub 52 100.0 % of its demand.
+
+ Customer 1016 goes to current hub 54 100.0 % of its demand.
+
+ Customer 1017 goes to current hub 47 100.0 % of its demand.
+
+ Customer 1018 goes to current hub 55 100.0 % of its demand.
+
+ Customer 1019 goes to current hub 16 100.0 % of its demand.
+
+ Customer 1020 goes to current hub 40 100.0 % of its demand.
+
+ Customer 1022 goes to current hub 5 100.0 % of its demand.
+
+ Customer 1023 goes to current hub 38 100.0 % of its demand.
+
+ Customer 1024 goes to current hub 5 100.0 % of its demand.
+
+ Customer 1025 goes to current hub 6 100.0 % of its demand.
+
+ Customer 1026 goes to current hub 13 100.0 % of its demand.
+
+ Customer 1027 goes to current hub 8 100.0 % of its demand.
+
+ Customer 1029 goes to current hub 19 100.0 % of its demand.
+
+ Customer 1030 goes to current hub 23 100.0 % of its demand.
+
+ Customer 1031 goes to current hub 56 100.0 % of its demand.
+
+ Customer 1032 goes to current hub 8 100.0 % of its demand.
+
+ Customer 1033 goes to current hub 55 100.0 % of its demand.
+
+ Customer 1034 goes to current hub 24 100.0 % of its demand.
+
+ Customer 1035 goes to current hub 17 100.0 % of its demand.
+
+ Customer 1036 goes to current hub 11 100.0 % of its demand.
+
+ Customer 1038 goes to current hub 45 100.0 % of its demand.
+
+ Customer 1039 goes to current hub 53 100.0 % of its demand.
+
+ Customer 1040 goes to current hub 55 100.0 % of its demand.
+
+ Customer 1041 goes to current hub 16 100.0 % of its demand.
+
+ Customer 1042 goes to current hub 22 100.0 % of its demand.
+
+ Customer 1043 goes to current hub 39 100.0 % of its demand.
+
+ Customer 1044 goes to current hub 30 100.0 % of its demand.
+
+ Customer 1046 goes to current hub 56 100.0 % of its demand.
+
+ Customer 1048 goes to current hub 41 100.0 % of its demand.
+
+ Customer 1050 goes to current hub 33 100.0 % of its demand.
+
+ Customer 1052 goes to current hub 54 100.0 % of its demand.
+
+ Customer 1053 goes to current hub 5 100.0 % of its demand.
+
+ Customer 1054 goes to current hub 24 100.0 % of its demand.
+
+ Customer 1055 goes to current hub 8 100.0 % of its demand.
+
+ Customer 1056 goes to current hub 57 100.0 % of its demand.
+
+ Customer 1057 goes to current hub 42 100.0 % of its demand.
+
+ Customer 1058 goes to current hub 2 100.0 % of its demand.
+
+ Customer 1059 goes to current hub 38 100.0 % of its demand.
+
+ Customer 1060 goes to current hub 6 100.0 % of its demand.
+
+ Customer 1061 goes to current hub 11 100.0 % of its demand.
+
+ Customer 1062 goes to current hub 39 100.0 % of its demand.
+
+ Customer 1064 goes to current hub 25 100.0 % of its demand.
+
+ Customer 1065 goes to current hub 8 100.0 % of its demand.
+
+ Customer 1066 goes to current hub 43 100.0 % of its demand.
+
+ Customer 1067 goes to current hub 42 100.0 % of its demand.
+
+ Customer 1068 goes to current hub 43 100.0 % of its demand.
+
+ Customer 1069 goes to current hub 38 100.0 % of its demand.
+
+ Customer 1071 goes to current hub 15 100.0 % of its demand.
+
+ Customer 1073 goes to current hub 55 100.0 % of its demand.
+
+ Customer 1074 goes to current hub 43 100.0 % of its demand.
+
+ Customer 1076 goes to current hub 21 100.0 % of its demand.
+
+ Customer 1077 goes to current hub 54 100.0 % of its demand.
+
+ Customer 1079 goes to current hub 29 100.0 % of its demand.
+
+ Customer 1082 goes to current hub 23 100.0 % of its demand.
+
+ Customer 1083 goes to current hub 42 100.0 % of its demand.
+
+ Customer 1084 goes to current hub 55 100.0 % of its demand.
+
+ Customer 1086 goes to current hub 40 100.0 % of its demand.
+
+ Customer 1087 goes to current hub 55 100.0 % of its demand.
+
+ Customer 1088 goes to current hub 16 100.0 % of its demand.
+
+ Customer 1089 goes to current hub 56 100.0 % of its demand.
+
+ Customer 1091 goes to current hub 1 100.0 % of its demand.
+
+ Customer 1093 goes to current hub 21 100.0 % of its demand.
+
+ Customer 1094 goes to current hub 2 100.0 % of its demand.
+
+ Customer 1095 goes to current hub 26 100.0 % of its demand.
+
+ Customer 1096 goes to current hub 33 100.0 % of its demand.
+
+ Customer 1097 goes to current hub 10 100.0 % of its demand.
+
+ Customer 1098 goes to current hub 49 100.0 % of its demand.
+
+ Customer 1099 goes to current hub 40 100.0 % of its demand.
+
+ Customer 1100 goes to current hub 8 100.0 % of its demand.
+
+ Customer 1101 goes to current hub 42 100.0 % of its demand.
+
+ Customer 1102 goes to current hub 54 100.0 % of its demand.
+
+ Customer 1103 goes to current hub 14 100.0 % of its demand.
+
+ Customer 1104 goes to current hub 53 100.0 % of its demand.
+
+ Customer 1105 goes to current hub 16 100.0 % of its demand.
+
+ Customer 1106 goes to current hub 6 100.0 % of its demand.
+
+ Customer 1107 goes to current hub 21 100.0 % of its demand.
+
+ Customer 1108 goes to current hub 45 100.0 % of its demand.
+
+ Customer 1109 goes to current hub 5 100.0 % of its demand.
+
+ Customer 1110 goes to current hub 5 100.0 % of its demand.
+
+ Customer 1111 goes to current hub 32 100.0 % of its demand.
+
+ Customer 1112 goes to current hub 54 100.0 % of its demand.
+
+ Customer 1113 goes to current hub 17 100.0 % of its demand.
+
+ Customer 1114 goes to current hub 53 100.0 % of its demand.
+
+ Customer 1116 goes to current hub 41 100.0 % of its demand.
+
+ Customer 1117 goes to current hub 41 100.0 % of its demand.
+
+ Customer 1118 goes to current hub 54 100.0 % of its demand.
+
+ Customer 1119 goes to current hub 23 100.0 % of its demand.
+
+ Customer 1120 goes to current hub 4 100.0 % of its demand.
+
+ Customer 1121 goes to current hub 13 100.0 % of its demand.
+
+ Customer 1122 goes to current hub 37 100.0 % of its demand.
+
+ Customer 1123 goes to current hub 33 100.0 % of its demand.
+
+ Customer 1124 goes to current hub 1 100.0 % of its demand.
+
+ Customer 1125 goes to current hub 41 100.0 % of its demand.
+
+ Customer 1126 goes to current hub 46 100.0 % of its demand.
+
+ Customer 1128 goes to current hub 42 100.0 % of its demand.
+
+ Customer 1129 goes to current hub 1 100.0 % of its demand.
+
+ Customer 1130 goes to current hub 11 100.0 % of its demand.
+
+ Customer 1131 goes to current hub 27 100.0 % of its demand.
+
+ Customer 1132 goes to current hub 33 100.0 % of its demand.
+
+ Customer 1134 goes to current hub 40 100.0 % of its demand.
+
+ Customer 1135 goes to current hub 5 100.0 % of its demand.
+
+ Customer 1136 goes to current hub 21 100.0 % of its demand.
+
+ Customer 1138 goes to current hub 6 100.0 % of its demand.
+
+ Customer 1141 goes to current hub 1 100.0 % of its demand.
+
+ Customer 1143 goes to current hub 24 100.0 % of its demand.
+
+ Customer 1144 goes to current hub 32 100.0 % of its demand.
+
+ Customer 1145 goes to current hub 40 100.0 % of its demand.
+
+ Customer 1146 goes to current hub 15 100.0 % of its demand.
+
+ Customer 1148 goes to current hub 37 100.0 % of its demand.
+
+ Customer 1150 goes to current hub 41 100.0 % of its demand.
+
+ Customer 1151 goes to current hub 56 100.0 % of its demand.
+
+ Customer 1153 goes to current hub 38 100.0 % of its demand.
+
+ Customer 1154 goes to current hub 11 100.0 % of its demand.
+
+ Customer 1155 goes to current hub 13 100.0 % of its demand.
+
+ Customer 1156 goes to current hub 13 100.0 % of its demand.
+
+ Customer 1157 goes to current hub 47 100.0 % of its demand.
+
+ Customer 1158 goes to current hub 55 100.0 % of its demand.
+
+ Customer 1160 goes to current hub 56 100.0 % of its demand.
+
+ Customer 1161 goes to current hub 46 100.0 % of its demand.
+
+ Customer 1162 goes to current hub 43 100.0 % of its demand.
+
+ Customer 1163 goes to current hub 21 100.0 % of its demand.
+
+ Customer 1165 goes to current hub 57 100.0 % of its demand.
+
+ Customer 1166 goes to current hub 32 100.0 % of its demand.
+
+ Customer 1167 goes to current hub 4 100.0 % of its demand.
+
+ Customer 1168 goes to current hub 6 100.0 % of its demand.
+
+ Customer 1169 goes to current hub 55 100.0 % of its demand.
+
+ Customer 1171 goes to current hub 40 100.0 % of its demand.
+
+ Customer 1172 goes to current hub 45 100.0 % of its demand.
+
+ Customer 1173 goes to current hub 53 100.0 % of its demand.
+
+ Customer 1174 goes to current hub 37 100.0 % of its demand.
+
+ Customer 1175 goes to current hub 17 100.0 % of its demand.
+
+ Customer 1176 goes to current hub 21 100.0 % of its demand.
+
+ Customer 1177 goes to current hub 28 100.0 % of its demand.
+
+ Customer 1180 goes to current hub 44 100.0 % of its demand.
+
+ Customer 1181 goes to current hub 21 100.0 % of its demand.
+
+ Customer 1182 goes to current hub 28 100.0 % of its demand.
+
+ Customer 1183 goes to current hub 21 100.0 % of its demand.
+
+ Customer 1185 goes to current hub 31 100.0 % of its demand.
+
+ Customer 1186 goes to current hub 11 100.0 % of its demand.
+
+ Customer 1187 goes to current hub 8 100.0 % of its demand.

@@ -1,0 +1,88 @@
+
+===============
+TRIP STATISTICS
+===============
+Total number of trips: 4773
+Total number of people: 5694
+
+=========
+CPLEX LOG
+=========
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Preprocessing_Linear                    0
+CPXPARAM_TimeLimit                               3600
+CPXPARAM_MIP_Tolerances_MIPGap                   0.01
+Warning: Control callbacks may disable some MIP features.
+Lazy constraint(s) or lazy constraint/branch callback is present.
+    Disabling dual reductions (CPX_PARAM_REDUCE) in presolve.
+    Disabling presolve reductions that prevent crushing forms.
+         Disabling repeat represolve because of lazy constraint/incumbent callback.
+Tried aggregator 1 time.
+MIP Presolve eliminated 1 rows and 0 columns.
+MIP Presolve modified 8 coefficients.
+Reduced MIP has 121 rows, 177 columns, and 789 nonzeros.
+Reduced MIP has 176 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.46 ticks)
+Probing time = 0.00 sec. (0.11 ticks)
+Clique table members: 112.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.11 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+      0     0      742.0610    11                      0.0000        0         
+*     0+    0                        30423.2276      742.0610            97.56%
+      0     0    12660.4722    11    30423.2276       Cuts: 7      106   58.39%
+      0     0    27705.3681    11    30423.2276      Cuts: 14      163    8.93%
+*     0+    0                        28993.1976    27705.3681             4.44%
+      0     0    27792.2754    11    28993.1976       User: 1      181    4.14%
+*     0+    0                        28842.8954    27792.2754             3.64%
+      0     0    27868.6414    11    28842.8954      Cuts: 10      200    3.38%
+*     0+    0                        28410.5414    27868.6414             1.91%
+      0     0    27888.9611    11    28410.5414       Cuts: 5      215    1.84%
+*     0+    0                        28386.2369    27888.9611             1.75%
+      0     0    27907.4133    11    28386.2369       Cuts: 9      233    1.69%
+      0     0    27913.2879    11    28386.2369       Cuts: 4      248    1.67%
+      0     0    27932.8824    11    28386.2369       Cuts: 5      258    1.60%
+*     0+    0                        28127.4411    27932.8824             0.69%
+
+GUB cover cuts applied:  1
+Cover cuts applied:  3
+Mixed integer rounding cuts applied:  5
+Zero-half cuts applied:  2
+User cuts applied:  16
+
+Root node processing (before b&c):
+  Real time             =    3.22 sec. (23.88 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    3.22 sec. (23.88 ticks)
+z_27 = 1.000000: from 907845 (index = 1555) to 902723 (index = 1207), mode = 1, nbVehicles = 8
+z_36 = 1.000000: from 907845 (index = 1555) to 902920 (index = 1236), mode = 1, nbVehicles = 8
+z_72 = 1.000000: from 902723 (index = 1207) to 210990 (index = 514), mode = 1, nbVehicles = 8
+z_87 = 1.000000: from 210990 (index = 514) to 907845 (index = 1555), mode = 1, nbVehicles = 8
+z_129 = 1.000000: from 902920 (index = 1236) to 907845 (index = 1555), mode = 1, nbVehicles = 8
+
+============
+TIME SUMMARY
+============
+0.000000s: start reading parameters
+1.460000s: complete reading parameters
+1.460000s: start building instance
+1.800000s: complete building instance
+1.800000s: start building network design problem
+4.240000s: complete building network design problem
+4.240000s: start solving network design problem
+7.530000s: solver completed with status = 2
+
+========
+SOLUTION
+========
+7.530000s: start calculating network scores
+7.560000s: complete calculating network scores
+7.560000s: start retrieving optimal passenger paths
+7.570000s: complete retrieving optimal passenger paths

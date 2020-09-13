@@ -1,0 +1,545 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "properties": {
+        "parameters": {
+            "description": "Overview of the most important parameters used in the optimization and in this file",
+            "type": "object",
+            "properties": {
+                "alpha": {
+                    "description": "Weight for cost and convenience (higher is more convenient)",
+                    "type": "number"
+                },
+                "shuttleCostPerKm": {
+                    "description": "Shuttle cost per kilometer",
+                    "type": "number"
+                },
+                "shuttleCostPerMile": {
+                    "description": "Shuttle cost per mile",
+                    "type": "number"
+                },
+                "busCostPerHour": {
+                    "description": "Bus cost per hour",
+                    "type": "number"
+                },
+                "fixedTransferTime": {
+                    "description": "Fixed transfer time in seconds at the start of each non-shuttle arc",
+                    "type": "number"
+                },
+                "passengerFactor": {
+                    "description": "Multiply the number of passengers with this factor",
+                    "type": "number"
+                },
+                "frequencies_per_hour": {
+                    "description": "Possible numbers of non-fixed vehicles (typically buses) per hour, only guaranteed to be integer over the time horizon (not per hour)",
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    }
+                },
+                "maximum_number_of_transfers": {
+                    "description": "Maximum number of transfers",
+                    "type": "integer"
+                },
+                "time_horizon": {
+                    "description": "Time horizon",
+                    "type": "integer"
+                },
+                "modes": {
+                    "description": "Possible modes, typically [shuttle, bus, rail]",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "time_units": {
+                    "description": "Time units used throughout this file, typically seconds",
+                    "type": "string"
+                },
+                "distance_units": {
+                    "description": "Distance units used throughout this file, typically meters",
+                    "type": "string"
+                },
+                "travelTimeFactorShuttle": {
+                    "description": "Multiplicationfactor to obtain shuttle travel times",
+                    "type": "number"
+                },
+                "travelTimeFactorBus": {
+                    "description": "Multiplicationfactor to obtain bus travel times",
+                    "type": "number"
+                }
+            },
+            "required": [
+                "alpha",
+                "busCostPerHour",
+                "distance_units",
+                "fixedTransferTime",
+                "frequencies_per_hour",
+                "maximum_number_of_transfers",
+                "modes",
+                "passengerFactor",
+                "shuttleCostPerKm",
+                "shuttleCostPerMile",
+                "time_horizon",
+                "time_units",
+                "travelTimeFactorBus",
+                "travelTimeFactorShuttle"
+            ]
+        },
+        "design": {
+            "description": "Details on the generated ODMTS design",
+            "type": "object",
+            "properties": {
+                "hubs": {
+                    "description": "List of all hubs, with the stop id (string) as their key. Hubs are stops that may be used as waypoints to transport passengers",
+                    "type": "object",
+                    "patternProperties": {
+                        "^.*$": {
+                            "type": "object",
+                            "properties": {
+                                "fixed": {
+                                    "description": "Hub was fixed in the design, typically the case for rail stations",
+                                    "type": "boolean"
+                                },
+                                "opened": {
+                                    "description": "Hub is opened and can be used, typically true. It may be that the hub is exclusively used by shuttles and not by bus and rail",
+                                    "type": "boolean"
+                                }
+                            },
+                            "required": [
+                                "fixed",
+                                "opened"
+                            ]
+                        }
+                    }
+                },
+                "legs": {
+                    "patternProperties": {
+                        "^.*$": {}
+                    },
+                    "description": "List of all legs in the design, from origin to destination. A leg gives a connection that can be traveled without any transfers, but there may be other stops inbetween. Typically, for a fixed rail line of length n, there will be n x (n-1) legs, so one between each pair of stops.",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "board_stop_id": {
+                                "description": "Boarding stop id (string)",
+                                "type": "string"
+                            },
+                            "alight_stop_id": {
+                                "description": "Alighting stop id (string)",
+                                "type": "string"
+                            },
+                            "mode": {
+                                "description": "Mode of this leg (index, lookup mode name in /parameters/modes)",
+                                "type": "integer"
+                            },
+                            "frequency_per_hour": {
+                                "description": "Numbers of vehicles per hour, only guaranteed to be integer over the time horizon (not per hour)",
+                                "type": "number"
+                            },
+                            "frequency_per_hour_index": {
+                                "anyOf": [
+                                    {
+                                        "description": "For non-fixed legs (typically buses), give the index of the frequency in /parameters/frequency_per_hour, otherwise null",
+                                        "type": "integer"
+                                    },
+                                    {
+                                        "description": "For non-fixed legs (typically buses), give the index of the frequency in /parameters/frequency_per_hour, otherwise null",
+                                        "type": "null"
+                                    }
+                                ]
+                            },
+                            "routes": {
+                                "description": "List of possible routes to travel this leg, can be looked up in /routes",
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "fixed": {
+                                "description": "Leg was fixed in the design, typically the case for rail legs",
+                                "type": "boolean"
+                            },
+                            "travel_time": {
+                                "description": "Time between boarding and alighting, rounded up to the next second",
+                                "type": "integer"
+                            },
+                            "waiting_time": {
+                                "description": "Expected waiting time (including fixed waiting time), rounded up to the next second",
+                                "type": "integer"
+                            },
+                            "total_time": {
+                                "description": "Sum of travel time and total time",
+                                "type": "integer"
+                            },
+                            "distance": {
+                                "description": "Distance between boarding and alighting, may be set to zero for fixed legs, rounded up to the next meter",
+                                "type": "integer"
+                            },
+                            "objective": {
+                                "description": "Contribution of design leg to the optimization objective value, may be set to zero for fixed legs",
+                                "type": "number"
+                            },
+                            "cost": {
+                                "description": "Unweighted contribution of design leg to the cost component of the objective value (using non-rounded distances and durations)",
+                                "type": "number"
+                            }
+                        },
+                        "required": [
+                            "alight_stop_id",
+                            "board_stop_id",
+                            "cost",
+                            "distance",
+                            "fixed",
+                            "frequency_per_hour",
+                            "frequency_per_hour_index",
+                            "mode",
+                            "objective",
+                            "routes",
+                            "total_time",
+                            "travel_time",
+                            "waiting_time"
+                        ]
+                    }
+                }
+            },
+            "required": [
+                "hubs",
+                "legs"
+            ]
+        },
+        "routes": {
+            "description": "List of routes that together cover all the design legs with the appropriate frequencies. Routes are cyclical: after the last stop, the vehicle returns to the first stop. Note that stops may occur multiple times on the same route, this is typical for rail routes that go back and forth.",
+            "type": "object",
+            "patternProperties": {
+                "^.*$": {
+                    "type": "object",
+                    "properties": {
+                        "mode": {
+                            "description": "Mode of this leg (index, lookup mode name in /parameters/modes)",
+                            "type": "integer"
+                        },
+                        "frequency_per_hour": {
+                            "description": "Numbers of vehicles per hour, only guaranteed to be integer over the time horizon (not per hour)",
+                            "type": "number"
+                        },
+                        "stop_ids": {
+                            "description": "List of stop ids on the route (strings)",
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "required": [
+                        "frequency_per_hour",
+                        "mode",
+                        "stop_ids"
+                    ]
+                }
+            }
+        },
+        "trip_splitting": {
+            "anyOf": [
+                {
+                    "description": "If trip splitting generation was disabled (generateTripSplittings setting), then /tripsplitting is set to null",
+                    "type": "null"
+                },
+                {
+                    "description": "Optimal passenger paths for all origins and destinations. The next two keys ('^.*$' and '^.*$') are first the origin stop id (string), and then the destination stop id (string). Both sets of keys are the same, but the ordering may differ. origin = destination is included, but these entries are set to null. ",
+                    "type": "object",
+                    "patternProperties": {
+                        "^.*$": {
+                            "type": "object",
+                            "patternProperties": {
+                                "^.*$": {
+                                    "anyOf": [
+                                        {
+                                            "type": "null"
+                                        },
+                                        {
+                                            "type": "object",
+                                            "properties": {
+                                                "legs": {
+                                                    "description": "List of all legs traveled by the passenger, from origin to destination. Either 'b', 'a', and 'm' are provided (typically for shuttles), or 'i' is provided (typically for buses and rail).",
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "b": {
+                                                                "description": "Boarding stop id (string)",
+                                                                "type": "string"
+                                                            },
+                                                            "a": {
+                                                                "description": "Alighting stop id (string)",
+                                                                "type": "string"
+                                                            },
+                                                            "m": {
+                                                                "description": "Mode of this leg (index, lookup mode name in /parameters/modes)",
+                                                                "type": "integer"
+                                                            },
+                                                            "i": {
+                                                                "description": "Leg index, lookup in /design/legs",
+                                                                "type": "integer"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "required": [
+                                                "legs"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "trips": {
+            "description": "Detailed trip information for all passenger flows on which the design is based. Information is presented both aggregate and per leg.",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "passengers": {
+                        "description": "Number of passengers that take this trip. Note that all trip information is for a SINGLE passenger. This number is the number of real passengers, so ignoring /parameters/passengerFactor",
+                        "type": "integer"
+                    },
+                    "origin_stop_id": {
+                        "description": "Origin stop id (string)",
+                        "type": "string"
+                    },
+                    "destination_stop_id": {
+                        "description": "Destination stop id (string)",
+                        "type": "string"
+                    },
+                    "departure_times": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "travel_time": {
+                        "description": "Time between origin and destination",
+                        "type": "integer"
+                    },
+                    "waiting_time": {
+                        "description": "Expected waiting time (including fixed waiting time) between origin and destination",
+                        "type": "integer"
+                    },
+                    "total_time": {
+                        "description": "Sum of travel time and total time",
+                        "type": "integer"
+                    },
+                    "distance": {
+                        "description": "Distance between origin and destination, rounded up to the next meter",
+                        "type": "integer"
+                    },
+                    "objective": {
+                        "description": "Contribution of passenger flow to the optimization objective value",
+                        "type": "number"
+                    },
+                    "legs": {
+                        "description": "List of all legs traveled by the passenger, from origin to destination",
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "board_stop_id": {
+                                    "description": "Boarding stop id (string)",
+                                    "type": "string"
+                                },
+                                "alight_stop_id": {
+                                    "description": "Alighting stop id (string)",
+                                    "type": "string"
+                                },
+                                "mode": {
+                                    "description": "Mode of this leg (index, lookup mode name in /parameters/modes)",
+                                    "type": "integer"
+                                },
+                                "frequency_per_hour": {
+                                    "description": "Numbers of vehicles per hour, only guaranteed to be integer over the time horizon (not per hour)",
+                                    "type": "number"
+                                },
+                                "frequency_per_hour_index": {
+                                    "anyOf": [
+                                        {
+                                            "description": "For non-fixed legs (typically buses), give the index of the frequency in /parameters/frequency_per_hour, otherwise null",
+                                            "type": "integer"
+                                        },
+                                        {
+                                            "description": "For non-fixed legs (typically buses), give the index of the frequency in /parameters/frequency_per_hour, otherwise null",
+                                            "type": "null"
+                                        }
+                                    ]
+                                },
+                                "routes": {
+                                    "anyOf": [
+                                        {
+                                            "type": "null"
+                                        },
+                                        {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "travel_time": {
+                                    "description": "Time between boarding and alighting, rounded up to the next second",
+                                    "type": "integer"
+                                },
+                                "waiting_time": {
+                                    "description": "Expected waiting time (including fixed waiting time), rounded up to the next second",
+                                    "type": "integer"
+                                },
+                                "total_time": {
+                                    "description": "Sum of travel time and total time",
+                                    "type": "integer"
+                                },
+                                "distance": {
+                                    "description": "Distance between boarding and alighting, may be set to zero for fixed legs, rounded up to the next meter",
+                                    "type": "integer"
+                                },
+                                "objective": {
+                                    "description": "Contribution of a single passenger on this leg to the optimization objective value, may be set to zero for fixed legs",
+                                    "type": "number"
+                                },
+                                "cost": {
+                                    "description": "Unweighted contribution of a single passenger on this leg to the cost component of the objective value (using non-rounded distances and durations)",
+                                    "type": "number"
+                                },
+                                "convenience": {
+                                    "description": "Unweighted contribution of a single passenger on this leg to the convenience component of the objective value (using non-rounded distances and durations)",
+                                    "type": "number"
+                                },
+                                "design_leg_index": {
+                                    "anyOf": [
+                                        {
+                                            "description": "Leg index, if leg exists (lookup in /design/legs), null otherwise",
+                                            "type": "integer"
+                                        },
+                                        {
+                                            "description": "Leg index, if leg exists (lookup in /design/legs), null otherwise",
+                                            "type": "null"
+                                        }
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "alight_stop_id",
+                                "board_stop_id",
+                                "convenience",
+                                "cost",
+                                "design_leg_index",
+                                "distance",
+                                "frequency_per_hour",
+                                "frequency_per_hour_index",
+                                "mode",
+                                "objective",
+                                "routes",
+                                "total_time",
+                                "travel_time",
+                                "waiting_time"
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "departure_times",
+                    "destination_stop_id",
+                    "distance",
+                    "legs",
+                    "objective",
+                    "origin_stop_id",
+                    "passengers",
+                    "total_time",
+                    "travel_time",
+                    "waiting_time"
+                ]
+            }
+        },
+        "scores": {
+            "description": "Overview of aggregate scores resulting from the optimization. These scores may use different units than those defined in the parameters. Convenience is typically based on minutes.",
+            "type": "object",
+            "properties": {
+                "total_objective": {
+                    "type": "number"
+                },
+                "total_cost": {
+                    "type": "number"
+                },
+                "total_convenience": {
+                    "type": "number"
+                },
+                "design_objective": {
+                    "type": "number"
+                },
+                "design_cost": {
+                    "type": "number"
+                },
+                "design_convenience": {
+                    "type": "number"
+                },
+                "passenger_objective": {
+                    "type": "number"
+                },
+                "passenger_cost": {
+                    "type": "number"
+                },
+                "passenger_convenience": {
+                    "type": "number"
+                },
+                "total_cost_per_passenger": {
+                    "description": "total_cost/scaled_number_of_passengers",
+                    "type": "number"
+                },
+                "passenger_cost_per_passenger": {
+                    "description": "passenger_cost/scaled_number_of_passengers",
+                    "type": "number"
+                },
+                "passenger_convenience_per_passenger": {
+                    "description": "passenger_convenience/scaled_number_of_passengers",
+                    "type": "number"
+                },
+                "original_number_of_passengers": {
+                    "description": "passenger_cost/scaled_number_of_passengers",
+                    "type": "integer"
+                },
+                "scaled_number_of_passengers": {
+                    "description": "passenger_cost/scaled_number_of_passengers",
+                    "type": "number"
+                }
+            },
+            "required": [
+                "design_convenience",
+                "design_cost",
+                "design_objective",
+                "original_number_of_passengers",
+                "passenger_convenience",
+                "passenger_convenience_per_passenger",
+                "passenger_cost",
+                "passenger_cost_per_passenger",
+                "passenger_objective",
+                "scaled_number_of_passengers",
+                "total_convenience",
+                "total_cost",
+                "total_cost_per_passenger",
+                "total_objective"
+            ]
+        }
+    },
+    "required": [
+        "design",
+        "parameters",
+        "routes",
+        "scores",
+        "trip_splitting",
+        "trips"
+    ]
+}
